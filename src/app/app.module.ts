@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCoffee, faHeart} from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faHeart, faCode} from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -31,6 +31,6 @@ import { faCoffee, faHeart} from '@fortawesome/free-solid-svg-icons';
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faCoffee, faGithub, faHeart, faLinkedin);
+    library.addIcons(faCoffee, faGithub, faHeart, faLinkedin, faCode);
   }
 }
