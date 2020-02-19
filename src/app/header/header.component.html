@@ -1,8 +1,54 @@
-<nav class="navbar">
-  also hello
-  <nav>
+<!--
+<nav class="navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Carla</a>
+  <nav >
     <a routerLink="/hello" routerLinkActive="active">hello</a>
     <a routerLink="/cv" routerLinkActive="active">CV</a>
     <a routerLink="/projects" routerLinkActive="active">Projekte</a>
   </nav>
 </nav>
+-->
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+
+  <a class="navbar-brand" href="#">Carla</a>
+  <div class="navbar-header">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+
+  <div class="collapse navbar-collapse collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto mr-1">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/hello" routerLinkActive="active">hello</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cv">CV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/projects">Projekte</a>
+      </li>
+    </ul>
+  </div>
+
+<!--
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+      <li><a href="#">Left</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-center">
+      <li><a href="#">Center</a></li>
+      <li><a href="#">Center</a></li>
+    <li><a href="#">Center</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Right</a></li>
+  </ul>
+  </div>
+  -->
+</nav>
+
+
