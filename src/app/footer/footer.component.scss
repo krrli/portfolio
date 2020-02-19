@@ -1,2 +1,22 @@
 
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: -10px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
 
+.social {
+  text-decoration: none !important;
+  color: #6c757d ;
+}
+a:hover, a:visited, a:link, a:active{
+  text-decoration: none !important;
+  padding-right: 10px;
+  color: #6c757d;
+}
