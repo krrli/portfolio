@@ -1,22 +1,25 @@
+$text-color-dark:#343a40;
+//$text-color-dark: fuchsia;
 
-
+html {
+  font-size: 1rem;
+  color: $text-color-dark;
+  padding-top: 80px;
+}
 
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
   width: 100%;
-  background: #1abc9c;
-  color: white;
   text-align: center;
+  background-color: white;
 }
-
-
-
-
 
 a:hover, a:visited, a:link, a:active{
   text-decoration: none !important;
-  color: white;
   padding-right: 10px;
+  color: $text-color-dark;
 }
