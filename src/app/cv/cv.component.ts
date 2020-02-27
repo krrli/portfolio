@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { Jobs } from '../jobs';
+
 
 @Component({
   selector: 'app-cv',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cv.component.scss']
 })
 export class CvComponent implements OnInit {
+  jobs: Jobs[];
 
-  constructor() { }
+
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
+
+    this.httpClient.get('assets/jobs.json').subscribe(
+      jobData => {
+        this.jobs = jobData as Jobs[];
+
+      }
+    );
   }
 
 }
