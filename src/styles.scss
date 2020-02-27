@@ -1,6 +1,6 @@
-$text-color-dark:#343a40;
-$text-footer: #6c757d;
-//$text-color-dark: fuchsia;
+//@import '~variables.scss';
+@import 'variables.scss';
+
 
 html {
   font-size: 1rem;

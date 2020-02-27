@@ -4,7 +4,7 @@
     "dateTo": "2019-07",
     "companyName": "bbv Software Services AG",
     "function": "Software Engineer",
-    "mainTasks": "Agile Entwicklung (Scrum), Java, C#, Webtechnologien",
+    "description": "Agile Entwicklung (Scrum), Java, C#, Webtechnologien",
     "employmentRate": "80%"
   },
   {
@@ -12,7 +12,7 @@
     "dateTo": "2017-12",
     "companyName": "Sage Schweiz AG",
     "function": "Software Developer",
-    "mainTasks": "Agile Entwicklung (Scrum), C#, MSSQL, ASP.NET, NSubsistute",
+    "description": "Agile Entwicklung (Scrum), C#, MSSQL, ASP.NET, NSubsistute",
     "employmentRate": "60%"
   },
   {
@@ -20,15 +20,15 @@
     "dateTo": "2015-11",
     "companyName": "Opacc Software AG",
     "function": "Scripterin / Entwicklerin",
-    "mainTasks": "JScript.NET, F-Script, BOF-Script, MSSQL",
+    "description": "JScript.NET, F-Script, BOF-Script, MSSQL",
     "employmentRate": "100%"
   },
   {
     "dateFrom": "2006-08",
     "dateTo": "2010-07",
     "companyName": "CSS Kranken-Versicherung AG",
-    "function": "Ausbildung zur Informatikerin Applikationsentwicklung",
-    "mainTasks": "Java, Swing, PHP, HTML, CSS",
+    "function": "Lernende Informatik Applikationsentwicklung",
+    "description": "Java, Swing, PHP, HTML, CSS",
     "employmentRate": "100%"
   }
 ]

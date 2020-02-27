@@ -9,9 +9,16 @@ Erfahrungen zu sammeln. Durch das Informatik-Studium an der Hochschule Luzern ko
 ich bereits bestehendes Wissen vertiefen und in den Bereichen Software Engineering und
 Architektur viel dazulernen.
 </p>
-<h2>Arbeitgeber</h2>
-<ul>
-  <li *ngFor="let job of jobs">
-     {{job.companyName}}
-  </li>
-</ul>
+
+<div class="col mt-4">
+  <div class="timeline-body" *ngFor="let job of jobs">
+      <div class="timeline-item">
+        <div class="content">
+          <h3>{{job.function}}</h3>
+          <h4>{{job.companyName}}</h4>
+          <h5 class="date">{{job.dateFrom | date:'yyyy'}} - {{job.dateTo | date:'yyyy'}}</h5>
+          <p>{{job.description}}</p>
+        </div>
+      </div>
+  </div>
+</div>
