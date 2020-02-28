@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee, faHeart, faCode} from '@fortawesome/free-solid-svg-icons';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -22,7 +23,8 @@ import { faCoffee, faHeart, faCode} from '@fortawesome/free-solid-svg-icons';
     CvComponent,
     ProjectsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
