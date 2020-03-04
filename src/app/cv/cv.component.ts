@@ -10,18 +10,19 @@ import { Jobs } from '../jobs';
 })
 export class CvComponent implements OnInit {
   jobs: Jobs[];
+  jobsJson: string = 'assets/jobs.json';
 
 
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-
-    this.httpClient.get('assets/jobs.json').subscribe(
+    
+    this.httpClient.get<Jobs[]>('assets/jobs.json').subscribe(
       jobData => {
         this.jobs = jobData as Jobs[];
-
       }
-    );
-  }
+    );   
+  }   
+
 
 }
