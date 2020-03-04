@@ -1,5 +1,5 @@
-<h2>Curriculum vitae</h2>
-<p>
+
+<p class="headertext">
 Seit 2011 befasse ich mich damit, wie ich Benutzerinnen und Benutzern, Kundinnen und Kunden mit meiner Arbeit als
 Softwareentwicklerin das Leben vereinfache. Durch mein analytisches Denken und meine
 Neugierde kann ich mich jeweils rasch in neue Projekte und Technologien einarbeiten.
@@ -14,11 +14,15 @@ Architektur viel dazulernen.
   <div class="timeline-body" *ngFor="let job of jobs">
       <div class="timeline-item">
         <div class="content">
-          <h3>{{job.function}}</h3>
-          <h4>{{job.companyName}}</h4>
-          <h5 class="date">{{job.dateFrom | date:'yyyy'}} - {{job.dateTo | date:'yyyy'}}</h5>
-          <p>{{job.description}}</p>
+          <h4>{{job.function}}</h4>
+          <h5>{{job.companyName}}</h5>
+          <h5 class="date" *ngIf="dateTo(job.dateTo); else elseBlock">{{job.dateFrom | date:'MMM yyyy'}} - {{job.dateTo | date:'MMM yyyy'}}</h5>          
+          <ng-template #elseBlock><h5 class="date">{{job.dateFrom | date:'MMM yyyy'}} - heute</h5></ng-template>
+          <p class="description">{{job.description}}</p>
+          
         </div>
       </div>
   </div>
+</div>
+<div class="footerHack">
 </div>

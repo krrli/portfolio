@@ -24,5 +24,12 @@ export class CvComponent implements OnInit {
     );   
   }   
 
+  private dateTo(dateTo): boolean{    
+    if(dateTo == ''){      
+      return false;
+    } return true;
+    
+  }
+
 
 }

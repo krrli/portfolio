@@ -11,6 +11,15 @@
   ],
   "jobs": [
     {
+      "dateFrom": "2019-08",
+      "dateTo": "2020-01",
+      "companyName": "carla.dev",
+      "function": "Head of Gugus",
+      "description": "Freunde verabschieden, ins Flugzeug steigen, in Kanada rauspurzeln, tägliches Lagerfeuer, im Autodachzelt schlafen, ausschau halten nach Jaguar und Bär, Downhillen in Whistler, Surfen in Tofino, Roadtrip in den USA, Nationalparks erwandern, Kaffee aus dem Bialetti-Channli, Onepot Gerichte erfinden, überdosis Glanz und Glitzer in Las Vegas, Rössli reiten, weiterziehen nach Costa Rica, surfen, jeden Tag X Tierli streicheln, wandern, surfen, essen, Tierli beobachten, Die Liste ist lang. Toll war's, jetzt ist jedoch wieder Zeit für den Ernst des Lebens.",
+      "employmentRate": "100%"
+    },
+  
+    {
       "dateFrom": "2018-09",
       "dateTo": "2019-07",
       "companyName": "bbv Software Services AG",
