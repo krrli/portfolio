@@ -8,4 +8,5 @@ export interface Projects {
     dateFrom: Date;
     dateTo: Date;
     shortDescription: string;
+    image: string;
 }

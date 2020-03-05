@@ -4,18 +4,22 @@
         "customer": "carla.land",
         "title":"Portfolio",
         "tags":"Angular, Bootstrap, FontAwesome, GithubPages, Git",
-        "tagsArray":[],
+        "tagsArray":[
+            "Angular", "Bootstrap", "FontAwesome", "GithubPages", "Git"
+        ],
         "description":"",
-        "shortDescription":""
+        "shortDescription":"Portfolio Webseite, die du hier siehst. Erstellt mit Angular.",
+        "image": "./assets/carla-bw.jpg"
     },
     {
         "id": "007",
         "customer": "Büro Babette",
         "title":"KoRe Excel",
         "tags":"Excel",
-        "tagsArray":[],
+        "tagsArray":["Excel"],
         "description":"Toller Spass!",
-        "shortDescription":""
+        "shortDescription":"",
+        "image":"./assets/babette.png"
     },
     {
         "id": "007",
@@ -36,16 +40,17 @@
         "tagsArray":[],
         "description":"",
         "shortDescription":""
-    }, 
+    },
     {
         "id": "005",
         "customer": "WELCOME Immobilien AG",
-        "title":"mySTWEG (Bachelordiplomarbeit)",
+        "title":"Bachelordiplomarbeit: mySTWEG",
         "tags":"SoDa, Ionic Framework, Angular, Typescript, Cordova, C#, MS SQL, VSTS, Azure Cloud, Webstorm, Visual Studio, SQL Server Management Studio, Visual Studio App Center, Git",
         "tagsArray":["SoDa","Ionic Framework","Angular","Typescript","Cordova","C#","MS SQL","VSTS","Azure Cloud","Webstorm","Visual Studio","SQL Server Management Studio","Visual Studio App Center","Git"],
         "description":"Um die Kommunikation unter Eigentümer und zwischen der Immobilienfirma bei Stockwerkeigentumswohnungen zu vereinfachen, möchte WELCOME Immobilien eine Plattform lancieren. Im Rahmen meiner Bachelordiplomarbeit befasste ich mich in einem Zweierteam mit der Entwicklung der Architektur, der Wahl der geeigneten Technologien und dem Erstellen eines Prototypen einer Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen. Das Projekt wurde nach dem Projektmodell SoDa durchgeführt. Während der Initialisierungsphase habe ich die Anforderungen aufgenommen, die Architektur entwickelt und die geeigneten Technologien ausgewählt. Beim Entwickeln der Architektur musste berücksichtigt werden, dass die Lösung zu einem späteren Zeitpunkt als Software-as-a-Service eingesetzt werden soll (Skalierbarkeit). Ausserdem wurde das Architekturprinzip «Design for Change» mit in den Entwurf einbezogen. Anschliessen wurden die einzusetzenden Technologien in den Bereichen Datenbank, Front- und Backend evaluiert und ausgewählt. Während den darauffolgenden Sprints habe ich in der Rolle des Product Owners die User Stories priorisiert und in der Rolle der Entwicklerin umgesetzt. Als Scrummaster habe ich die Sprintreviews geleitet. Als Ergebnisse konnte ich der WELCOME Immobilien AG eine browserbasierte, responsive Webapplikation übergeben, die in allen gängigen Browsern und Betriebssystemen lauffähig ist. Zusätzlich zur Webapplikation wurde mithilfe von Cordova eine native Android App erstellt. Die dazugehörige Dokumentation soll die Weiterentwicklung von mySTWEG ermöglichen. Der entwickelte Prototyp ist bei der gesamten Belegschaft von WELCOME Immobilien AG auf Begeisterung gestossen. Auch andere Immobilienfirmen haben grosses Interesse am Prototypen gezeigt. SoDa: 'Software Development agile' - basiert auf dem Vorgehensmodell Scrum und bindet dieses in einen Projektmanagement-Rahmen ein (Scrum-Adaption der Hochschule Luzern)",
-        "shortDescription":"Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen - Android App und Website"
-    }, 
+        "shortDescription":"Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen - Android App und Website",
+        "image":"./assets/mystweg.jpg"
+    },
         {
         "id": "004",
         "customer": "HSLU",
@@ -72,7 +77,7 @@
         "tagsArray":["Scrum","C#","MS SQL", "ASP.NET", "TFS", "HTML", "CSS", "JavaScript"],
         "description":"Sage200 ist eine ERP-Software als Komplettlösung für mittelgrosse Unternehmen. Das Sage200 Personal Modul bietet Funktionen für die Erfassung von Absenzen für Mitarbeiter. Diese sollen einfacher zu benutzen und selbsterklärender gestaltet werden. Zusammen mit dem Scrum-Team habe ich die webbasierte Lösung «Absenzenmanagement» weiterentwickelt und gewartet. Dabei habe ich zusammen mit dem Product Owner die User Stories priorisiert und dann umgesetzt. Unterstützung erhielt ich beim Anpassen von konsumierten Services oder Fragen zu Best-Practices durch die Architektur-Abteilung. Das Tool «Absenzenmanagement» ermöglicht es den Sage200 Personal-Benutzern, einfacher Absenzen eintragen zu können, sowie die Übersicht über Absenzen innerhalb des Teams zu verbessern.",
         "shortDescription":"Sage200 Absenzenmanagement: Weblösung für Sage200 Benutzer"
-    },    
+    },
     {
         "id": "001",
         "customer": "Sage Schweiz AG",
@@ -81,5 +86,5 @@
         "tagsArray":["Scrum","C#","MSSQL", "CrystalReports", ".NET Core", "TFS"],
         "description":"Die Bedienung der Sage200 - Module Personal und CRM war erschwert und die Ergebnisse inkonsistent. Zusammen mit dem Scrum Team konnte ich die bestehenden Schwachstellen priorisieren und verbessern. Bestehende Unit Tests konnte ich korrigieren und fehlende neu hinzufügen. Durch die Scrum Team-übergreifenden Review Meetings und Abnahmetests konnte ich sicherstellen, dass die Schwachstellen behoben sind. Sage Schweiz AG freut sich über eine stabile Software mit konsistentem Verhalten. Die verbesserte Usability ermöglicht es den Benutzern, die Software ohne zusätzliche Hilfe durch den Support zu bedienen.",
         "shortDescription":"Beschreibung Anstellung bei Sage Schweiz AG"
-    }    
+    }
 ]
