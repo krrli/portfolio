@@ -13,6 +13,7 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee, faHeart, faCode} from '@fortawesome/free-solid-svg-icons';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 
@@ -24,7 +25,8 @@ import { SkillsComponent } from './skills/skills.component';
     ProjectsComponent,
     HeaderComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

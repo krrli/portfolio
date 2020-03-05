@@ -2,7 +2,7 @@
 
   <div class="card-columns">
     <div *ngFor="let project of projects">
-      <div class="card project card " >  
+      <div class="card project card " routerLink ="/project-detail/{{project.id}}">
         <img class="card-img-top" src={{project.image}}>
         <div class="card-body">
           <h5 class="card-title">{{project.title}}</h5>

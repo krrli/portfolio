@@ -1,3 +1,4 @@
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SkillsComponent } from './skills/skills.component';
 import { HelloComponent } from './hello/hello.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -11,9 +12,8 @@ const routes: Routes = [
   //{path: 'skills', component: SkillsComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'hello', component: HelloComponent},
-  { path: '',
-  redirectTo: '/hello',
-  pathMatch: 'full'
+  {path: 'project-detail/:id', component: ProjectDetailComponent},
+  {path: '', redirectTo: '/hello', pathMatch: 'full'
 }
 ];
 
