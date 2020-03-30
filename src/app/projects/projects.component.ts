@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import projects from '../../assets/projects.json';
 import { Projects } from '../projects';
+
+
 
 
 @Component({
@@ -11,14 +13,24 @@ import { Projects } from '../projects';
 export class ProjectsComponent implements OnInit {
   projects: Projects[];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor() {}
 
   ngOnInit() {
+    /*
     this.httpClient.get<Projects[]>('assets/projects.json').subscribe(
       data => {
         this.projects = data as Projects[];
       }
-    );  
+    );
+    */
+
+    this.projects = projects as Projects[];
+
   }
 
+  getProject(id: string) {
+    return this.projects.filter(p => p.id.includes(id))
+    .sort((a,b) => a.id.includes(id) && !b.id.includes(id) ? -1 : b.id.includes(id) && !a.id.includes(id) ? 1 :0);
+
+  }
 }

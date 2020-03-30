@@ -1,12 +1,10 @@
 export interface Projects {
-    id: number;
+    id: string;
     customer: string;
     title: string;
     tags: string;
     tagsArray: string[];
     description: string;
-    dateFrom: Date;
-    dateTo: Date;
     shortDescription: string;
     image: string;
 }

@@ -2,6 +2,8 @@
 
   <div class="card-columns">
     <div *ngFor="let project of projects">
+      <!--button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button-->
+
       <div class="card project card " routerLink ="/project-detail/{{project.id}}">
         <img class="card-img-top" src={{project.image}}>
         <div class="card-body">
