@@ -2,7 +2,7 @@ import { ProjectDetailComponent } from './../project-detail/project-detail.compo
 import { ProjectService } from './../project.service';
 import { Component, OnInit } from '@angular/core';
 import { Projects } from '../projects';
-//import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -15,21 +15,28 @@ import { Projects } from '../projects';
 export class ProjectsComponent implements OnInit {
   projects: Projects[];
 
-  constructor(private projectService: ProjectService) { }
+  // constructor(private projectService: ProjectService) { }
 
-  //constructor(private projectService: ProjectService, private modalService: NgbModal) { }
+  constructor(private projectService: ProjectService, private modalService: NgbModal) { }
 
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
-
   }
 
+
+  openDetails(project) {
+    console.log(project.id);
+    const modalRef = this.modalService.open(ProjectDetailComponent);
+    modalRef.componentInstance.name = 'Detail';
+    modalRef.componentInstance.project = project;
+  }
   /*
-  open() {
+  openDetails(id: string) {
+    console.log(id);
     const modalRef = this.modalService.open(ProjectDetailComponent);
     modalRef.componentInstance.name = 'World';
   }
-  */
+*/
 
 }

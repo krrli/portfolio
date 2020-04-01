@@ -16,6 +16,7 @@ import { ProjectService } from '../project.service';
 export class ProjectDetailComponent implements OnInit {
   //projects: Projects[];
   project$: Observable<Projects>;
+  project: Projects;
 
   constructor(private projectService: ProjectService,  private route: ActivatedRoute,
     private router: Router) { }

@@ -14,6 +14,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee, faHeart, faCode} from '@fortawesome/free-solid-svg-icons';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -32,10 +33,14 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModalModule
   ],
+  exports:[ProjectDetailComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ProjectDetailComponent]
+
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
