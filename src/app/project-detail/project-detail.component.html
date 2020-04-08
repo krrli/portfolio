@@ -1,12 +1,15 @@
+<div class="modal-header">
+
+  <h3>{{ project.title }}</h3>
+</div>
 
 <div>
-  <h3>"{{ project.title }}"</h3>
-  <div>
-    <label>Id: </label>{{ project.id }}</div>
+  <label>Id: </label>{{ project.id }}
+</div>
     {{ project.description }}
 
-  <p>
-    <!--button (click)="gotoHeroes(hero)">Back</button-->
-  </p>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Merci!</button>
 </div>
 
