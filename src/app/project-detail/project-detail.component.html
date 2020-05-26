@@ -1,15 +1,17 @@
+
 <div class="modal-header">
 
   <h3>{{ project.title }}</h3>
 </div>
 
 <div>
-  <label>Id: </label>{{ project.id }}
+  {{ project.description }}
 </div>
-    {{ project.description }}
+
 
 
 <div class="modal-footer">
   <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Merci!</button>
 </div>
+
 
