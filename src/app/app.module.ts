@@ -15,6 +15,7 @@ import { faCoffee, faHeart, faCode} from '@fortawesome/free-solid-svg-icons';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
 
 
 
@@ -27,7 +28,8 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     SkillsComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ProjectDetailSliderComponent
   ],
   imports: [
     BrowserModule,

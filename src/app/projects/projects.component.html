@@ -2,12 +2,11 @@
 
   <div class="card-columns">
     <div *ngFor="let project of projects">
-      <!--button class="btn btn-lg btn-outline-primary" (click)="openDetails(project)">blops</button-->
 
-
-      <!--div class="card project card" routerLink ="/project-detail/{{project.id}}"-->
-      <div class="card project card" (click)="openDetails(project)">
-          <img class="card-img-top" src={{project.image}}>
+      <div class="card project card" routerLink ="/project-detail-slider/{{project.id}}">
+      <!--to open details as popup-->
+      <!--div class="card project card" (click)="openDetails(project)"-->
+        <img class="card-img-top" src={{project.image}}>
         <div class="card-body">
           <h5 class="card-title">{{project.title}}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{project.customer}}</h6>
