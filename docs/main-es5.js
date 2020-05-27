@@ -136,6 +136,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/project-detail-slider/project-detail-slider.component.html":
+  /*!******************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/project-detail-slider/project-detail-slider.component.html ***!
+    \******************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppProjectDetailSliderProjectDetailSliderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<div class=project *ngIf=\"project$ | async as project\">\n\n  <div class=text>\n    <a routerLink=\"../../projects\"><fa-icon [icon]=\"['fas', 'chevron-left']\"></fa-icon></a>\n    <br>\n    <h3>{{ project.title }}</h3>\n    <br>\n    {{ project.description }}\n  </div>\n  <br>\n  <div class=\"footerHack\"></div>\n</div>\n\n\n\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/project-detail/project-detail.component.html":
   /*!****************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/project-detail/project-detail.component.html ***!
@@ -151,7 +171,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"modal-header\">\n\n  <h3>{{ project.title }}</h3>\n</div>\n\n<div>\n  <label>Id: </label>{{ project.id }}\n</div>\n    {{ project.description }}\n\n\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"activeModal.close('Close click')\">Merci!</button>\n</div>\n\n";
+    __webpack_exports__["default"] = "\n<div class=\"modal-header\">\n\n  <h3>{{ project.title }}</h3>\n</div>\n\n<div>\n  {{ project.description }}\n</div>\n\n\n\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"activeModal.close('Close click')\">Merci!</button>\n</div>\n\n\n";
     /***/
   },
 
@@ -171,7 +191,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container-lg px-3 my-5 markdown-body\">\n\n  <div class=\"card-columns\">\n    <div *ngFor=\"let project of projects\">\n      <!--button class=\"btn btn-lg btn-outline-primary\" (click)=\"openDetails(project)\">blops</button-->\n\n\n      <!--div class=\"card project card\" routerLink =\"/project-detail/{{project.id}}\"-->\n      <div class=\"card project card\" (click)=\"openDetails(project)\">\n          <img class=\"card-img-top\" src={{project.image}}>\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">{{project.title}}</h5>\n          <h6 class=\"card-subtitle mb-2 text-muted\">{{project.customer}}</h6>\n          <p class=\"card-text\">{{project.shortDescription}}</p>\n          <div class=\"card-text\">\n            <div class=\"badge badge-pill text-primary border border-primary\" *ngFor=\"let tag of project.tagsArray\">\n              {{tag}}\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n<div class=\"footerHack\"></div>\n\n\n";
+    __webpack_exports__["default"] = "<div class=\"container-lg px-3 my-5 markdown-body\">\n\n  <div class=\"card-columns\">\n    <div *ngFor=\"let project of projects\">\n\n      <!--td><a [routerLink]=\"['edit', product.id]\">{{product.name}}</a></td-->\n\n      <div class=\"card project card\" routerLink =\"/project-detail-slider/{{project.id}}\">\n      <!--to open details as popup-->\n      <!--div class=\"card project card\" (click)=\"openDetails(project)\"-->\n        <img class=\"card-img-top\" src={{project.image}}>\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">{{project.title}}</h5>\n          <h6 class=\"card-subtitle mb-2 text-muted\">{{project.customer}}</h6>\n          <p class=\"card-text\">{{project.shortDescription}}</p>\n          <div class=\"card-text\">\n            <div class=\"badge badge-pill text-primary border border-primary\" *ngFor=\"let tag of project.tagsArray\">\n              {{tag}}\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n<div class=\"footerHack\"></div>\n\n\n";
     /***/
   },
 
@@ -754,6 +774,166 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/_animations/fadeIn.animation.ts":
+  /*!*************************************************!*\
+    !*** ./src/app/_animations/fadeIn.animation.ts ***!
+    \*************************************************/
+
+  /*! exports provided: fadeInAnimation */
+
+  /***/
+  function srcApp_animationsFadeInAnimationTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "fadeInAnimation", function () {
+      return fadeInAnimation;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
+
+    var fadeInAnimation = // trigger name for attaching this animation to an element using the [@triggerName] syntax
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('fadeInAnimation', [// route 'enter' transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])(':enter', [// css styles at start of transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      opacity: 0
+    }), // animation and styles at end of transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('.3s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      opacity: 1
+    }))])]);
+    /***/
+  },
+
+  /***/
+  "./src/app/_animations/index.ts":
+  /*!**************************************!*\
+    !*** ./src/app/_animations/index.ts ***!
+    \**************************************/
+
+  /*! exports provided: fadeInAnimation, slideInOutAnimation */
+
+  /***/
+  function srcApp_animationsIndexTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _fadeIn_animation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./fadeIn.animation */
+    "./src/app/_animations/fadeIn.animation.ts");
+    /* harmony reexport (safe) */
+
+
+    __webpack_require__.d(__webpack_exports__, "fadeInAnimation", function () {
+      return _fadeIn_animation__WEBPACK_IMPORTED_MODULE_1__["fadeInAnimation"];
+    });
+    /* harmony import */
+
+
+    var _slideInOut_animation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./slideInOut.animation */
+    "./src/app/_animations/slideInOut.animation.ts");
+    /* harmony reexport (safe) */
+
+
+    __webpack_require__.d(__webpack_exports__, "slideInOutAnimation", function () {
+      return _slideInOut_animation__WEBPACK_IMPORTED_MODULE_2__["slideInOutAnimation"];
+    });
+    /***/
+
+  },
+
+  /***/
+  "./src/app/_animations/slideInOut.animation.ts":
+  /*!*****************************************************!*\
+    !*** ./src/app/_animations/slideInOut.animation.ts ***!
+    \*****************************************************/
+
+  /*! exports provided: slideInOutAnimation */
+
+  /***/
+  function srcApp_animationsSlideInOutAnimationTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "slideInOutAnimation", function () {
+      return slideInOutAnimation;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js");
+
+    var slideInOutAnimation = // trigger name for attaching this animation to an element using the [@triggerName] syntax
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('slideInOutAnimation', [// end state styles for route container (host)
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["state"])('*', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      // the view covers the whole screen with a semi tranparent background
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.8)' //backgroundColor: 'rgba(0, 0, 0, 0)'
+
+    })), // route 'enter' transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])(':enter', [// styles at start of transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      // start with the content positioned off the right of the screen,
+      // -400% is required instead of -100% because the negative position adds to the width of the element
+      right: '-400%',
+      // start with background opacity set to 0 (invisible)
+      backgroundColor: 'rgba(0, 0, 0, 0)'
+    }), // animation and styles at end of transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('.5s ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      // transition the right position to 0 which slides the content into view
+      right: 0,
+      // transition the background opacity to 0.8 to fade it in
+      backgroundColor: 'rgba(0, 0, 0, 0.8)' //backgroundColor: 'rgba(0, 0, 0, 0)'
+
+    }))]), // route 'leave' transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])(':leave', [// animation and styles at end of transition
+    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('.5s ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      // transition the right position to -400% which slides the content out of view
+      right: '-400%',
+      // transition the background opacity to 0 to fade it out
+      backgroundColor: 'rgba(0, 0, 0, 0)'
+    }))])]);
+    /***/
+  },
+
+  /***/
   "./src/app/app-routing.module.ts":
   /*!***************************************!*\
     !*** ./src/app/app-routing.module.ts ***!
@@ -781,53 +961,62 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _project_detail_slider_project_detail_slider_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./project-detail-slider/project-detail-slider.component */
+    "./src/app/project-detail-slider/project-detail-slider.component.ts");
+    /* harmony import */
+
+
+    var _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./project-detail/project-detail.component */
     "./src/app/project-detail/project-detail.component.ts");
     /* harmony import */
 
 
-    var _hello_hello_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _hello_hello_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./hello/hello.component */
     "./src/app/hello/hello.component.ts");
     /* harmony import */
 
 
-    var _projects_projects_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _projects_projects_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./projects/projects.component */
     "./src/app/projects/projects.component.ts");
     /* harmony import */
 
 
-    var _cv_cv_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _cv_cv_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./cv/cv.component */
     "./src/app/cv/cv.component.ts");
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
 
     var routes = [{
       path: 'cv',
-      component: _cv_cv_component__WEBPACK_IMPORTED_MODULE_4__["CvComponent"]
+      component: _cv_cv_component__WEBPACK_IMPORTED_MODULE_5__["CvComponent"]
     }, //{path: 'skills', component: SkillsComponent},
     {
       path: 'projects',
-      component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_3__["ProjectsComponent"]
+      component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_4__["ProjectsComponent"]
     }, {
       path: 'hello',
-      component: _hello_hello_component__WEBPACK_IMPORTED_MODULE_2__["HelloComponent"]
+      component: _hello_hello_component__WEBPACK_IMPORTED_MODULE_3__["HelloComponent"]
     }, {
       path: 'project-detail/:id',
-      component: _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_1__["ProjectDetailComponent"]
+      component: _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_2__["ProjectDetailComponent"]
+    }, {
+      path: 'project-detail-slider/:id',
+      component: _project_detail_slider_project_detail_slider_component__WEBPACK_IMPORTED_MODULE_1__["ProjectDetailSliderComponent"]
     }, {
       path: '',
       redirectTo: '/hello',
@@ -838,9 +1027,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _classCallCheck(this, AppRoutingModule);
     };
 
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_5__["NgModule"])({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forRoot(routes)],
-      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"]]
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_6__["NgModule"])({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"].forRoot(routes)],
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"]]
     })], AppRoutingModule);
     /***/
   },
@@ -961,102 +1150,114 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/platform-browser/animations */
+    "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+    /* harmony import */
+
+
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _hello_hello_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _hello_hello_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./hello/hello.component */
     "./src/app/hello/hello.component.ts");
     /* harmony import */
 
 
-    var _cv_cv_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _cv_cv_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./cv/cv.component */
     "./src/app/cv/cv.component.ts");
     /* harmony import */
 
 
-    var _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _projects_projects_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./projects/projects.component */
     "./src/app/projects/projects.component.ts");
     /* harmony import */
 
 
-    var _header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./header/header.component */
     "./src/app/header/header.component.ts");
     /* harmony import */
 
 
-    var _footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./footer/footer.component */
     "./src/app/footer/footer.component.ts");
     /* harmony import */
 
 
-    var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @fortawesome/angular-fontawesome */
     "./node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js");
     /* harmony import */
 
 
-    var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @fortawesome/free-brands-svg-icons */
     "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
     /* harmony import */
 
 
-    var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @fortawesome/free-solid-svg-icons */
     "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
     /* harmony import */
 
 
-    var _skills_skills_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _skills_skills_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./skills/skills.component */
     "./src/app/skills/skills.component.ts");
     /* harmony import */
 
 
-    var _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./project-detail/project-detail.component */
     "./src/app/project-detail/project-detail.component.ts");
     /* harmony import */
 
 
-    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! @ng-bootstrap/ng-bootstrap */
     "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _project_detail_slider_project_detail_slider_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! ./project-detail-slider/project-detail-slider.component */
+    "./src/app/project-detail-slider/project-detail-slider.component.ts");
 
     var AppModule = function AppModule(library) {
       _classCallCheck(this, AppModule);
 
       this.library = library;
-      library.addIcons(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faCoffee"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_12__["faGithub"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faHeart"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_12__["faLinkedin"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faCode"]);
+      library.addIcons(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faCoffee"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faGithub"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faHeart"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faLinkedin"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faCode"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faChevronLeft"]);
     };
 
     AppModule.ctorParameters = function () {
       return [{
-        type: _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FaIconLibrary"]
+        type: _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FaIconLibrary"]
       }];
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _hello_hello_component__WEBPACK_IMPORTED_MODULE_6__["HelloComponent"], _cv_cv_component__WEBPACK_IMPORTED_MODULE_7__["CvComponent"], _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__["ProjectsComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"], _skills_skills_component__WEBPACK_IMPORTED_MODULE_14__["SkillsComponent"], _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_15__["ProjectDetailComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_16__["NgbModalModule"]],
-      exports: [_project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_15__["ProjectDetailComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _hello_hello_component__WEBPACK_IMPORTED_MODULE_7__["HelloComponent"], _cv_cv_component__WEBPACK_IMPORTED_MODULE_8__["CvComponent"], _projects_projects_component__WEBPACK_IMPORTED_MODULE_9__["ProjectsComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"], _skills_skills_component__WEBPACK_IMPORTED_MODULE_15__["SkillsComponent"], _project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_16__["ProjectDetailComponent"], _project_detail_slider_project_detail_slider_component__WEBPACK_IMPORTED_MODULE_18__["ProjectDetailSliderComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__["NgbModalModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"]],
+      exports: [_project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_16__["ProjectDetailComponent"]],
       providers: [],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]],
-      entryComponents: [_project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_15__["ProjectDetailComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]],
+      entryComponents: [_project_detail_project_detail_component__WEBPACK_IMPORTED_MODULE_16__["ProjectDetailComponent"]]
     })], AppModule);
     /***/
   },
@@ -1408,6 +1609,133 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/project-detail-slider/project-detail-slider.component.scss":
+  /*!****************************************************************************!*\
+    !*** ./src/app/project-detail-slider/project-detail-slider.component.scss ***!
+    \****************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppProjectDetailSliderProjectDetailSliderComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".project {\n  padding-top: 50px;\n  margin-top: 60px;\n  background-color: magenta;\n  position: absolute;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  width: 80%;\n  height: 100%;\n  overflow: auto;\n  background: #fff;\n  padding: 20px;\n  border-left: 1px solid #e0e0e0;\n}\n\n.button {\n  background-color: yellow;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdC1kZXRhaWwtc2xpZGVyL0M6XFxDb2RlXFxwb3J0Zm9saW8vc3JjXFxhcHBcXHByb2plY3QtZGV0YWlsLXNsaWRlclxccHJvamVjdC1kZXRhaWwtc2xpZGVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wcm9qZWN0LWRldGFpbC1zbGlkZXIvcHJvamVjdC1kZXRhaWwtc2xpZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsTUFBQTtFQUNBLFFBQUE7RUFDQSxVQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7RUFDQSxnQkFBQTtFQUNBLGFBQUE7RUFDQSw4QkFBQTtBQ0NGOztBREVBO0VBQ0Usd0JBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL3Byb2plY3QtZGV0YWlsLXNsaWRlci9wcm9qZWN0LWRldGFpbC1zbGlkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvamVjdHtcclxuICBwYWRkaW5nLXRvcDogNTBweDtcclxuICBtYXJnaW4tdG9wOiA2MHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IG1hZ2VudGE7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHotaW5kZXg6IDEwMDtcclxuICB0b3A6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgd2lkdGg6IDgwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgb3ZlcmZsb3c6IGF1dG87XHJcbiAgYmFja2dyb3VuZDogI2ZmZjtcclxuICBwYWRkaW5nOiAyMHB4O1xyXG4gIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI2UwZTBlMDtcclxufVxyXG5cclxuLmJ1dHRvbntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XHJcbn1cclxuIiwiLnByb2plY3Qge1xuICBwYWRkaW5nLXRvcDogNTBweDtcbiAgbWFyZ2luLXRvcDogNjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogbWFnZW50YTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAxMDA7XG4gIHRvcDogMDtcbiAgcmlnaHQ6IDA7XG4gIHdpZHRoOiA4MCU7XG4gIGhlaWdodDogMTAwJTtcbiAgb3ZlcmZsb3c6IGF1dG87XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI2UwZTBlMDtcbn1cblxuLmJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvdztcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/project-detail-slider/project-detail-slider.component.ts":
+  /*!**************************************************************************!*\
+    !*** ./src/app/project-detail-slider/project-detail-slider.component.ts ***!
+    \**************************************************************************/
+
+  /*! exports provided: ProjectDetailSliderComponent */
+
+  /***/
+  function srcAppProjectDetailSliderProjectDetailSliderComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ProjectDetailSliderComponent", function () {
+      return ProjectDetailSliderComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _project_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../project.service */
+    "./src/app/project.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _animations_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../_animations/index */
+    "./src/app/_animations/index.ts");
+
+    var ProjectDetailSliderComponent =
+    /*#__PURE__*/
+    function () {
+      function ProjectDetailSliderComponent(projectService, route) {
+        _classCallCheck(this, ProjectDetailSliderComponent);
+
+        this.projectService = projectService;
+        this.route = route;
+        console.log(this.project);
+      }
+
+      _createClass(ProjectDetailSliderComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.project$ = this.route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
+            return _this2.projectService.getProject(params.get('id'));
+          }));
+        }
+      }]);
+
+      return ProjectDetailSliderComponent;
+    }();
+
+    ProjectDetailSliderComponent.ctorParameters = function () {
+      return [{
+        type: _project_service__WEBPACK_IMPORTED_MODULE_3__["ProjectService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]
+      }];
+    };
+
+    ProjectDetailSliderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'krrli-project-detail-slider',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./project-detail-slider.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/project-detail-slider/project-detail-slider.component.html")).default,
+      // make slide in/out animation available to this component
+      animations: [_animations_index__WEBPACK_IMPORTED_MODULE_5__["slideInOutAnimation"]],
+      // attach the slide in/out animation to the host (root) element of this component
+      host: {
+        '[@slideInOutAnimation]': ''
+      },
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./project-detail-slider.component.scss */
+      "./src/app/project-detail-slider/project-detail-slider.component.scss")).default]
+    })], ProjectDetailSliderComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/project-detail/project-detail.component.scss":
   /*!**************************************************************!*\
     !*** ./src/app/project-detail/project-detail.component.scss ***!
@@ -1423,7 +1751,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2plY3QtZGV0YWlsL3Byb2plY3QtZGV0YWlsLmNvbXBvbmVudC5zY3NzIn0= */";
+    __webpack_exports__["default"] = "div {\n  padding: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdC1kZXRhaWwvQzpcXENvZGVcXHBvcnRmb2xpby9zcmNcXGFwcFxccHJvamVjdC1kZXRhaWxcXHByb2plY3QtZGV0YWlsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wcm9qZWN0LWRldGFpbC9wcm9qZWN0LWRldGFpbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL3Byb2plY3QtZGV0YWlsL3Byb2plY3QtZGV0YWlsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2e1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcblxyXG59XHJcbiIsImRpdiB7XG4gIHBhZGRpbmc6IDEwcHg7XG59Il19 */";
     /***/
   },
 
@@ -1621,7 +1949,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".footerHack {\n  padding-top: 90px;\n}\n\n.badge {\n  margin-right: 5px;\n}\n\n.project.card {\n  border-radius: 15px;\n  text-decoration: none !important;\n}\n\n.project.card .card-img-top {\n  border-radius: 15px 15px 0 0;\n}\n\n.project.card:hover:not(.post) {\n  box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdHMvQzpcXENvZGVcXHBvcnRmb2xpby9zcmNcXGFwcFxccHJvamVjdHNcXHByb2plY3RzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wcm9qZWN0cy9wcm9qZWN0cy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcHJvamVjdHMvQzpcXENvZGVcXHBvcnRmb2xpby9zcmNcXHZhcmlhYmxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsaUJBQUE7QUNERjs7QURJQTtFQUNJLGlCQUFBO0FDREo7O0FETUE7RUFDRSxtQkVDZ0I7RUZBaEIsZ0NBQUE7QUNIRjs7QURNRTtFQUNFLDRCQUFBO0FDSko7O0FET0U7RUFDRSxtREFBQTtBQ0xKIiwiZmlsZSI6InNyYy9hcHAvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi92YXJpYWJsZXMuc2Nzcyc7XHJcblxyXG4uZm9vdGVySGFja3tcclxuICBwYWRkaW5nLXRvcDogOTBweDtcclxufVxyXG5cclxuLmJhZGdle1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7ICAgIFxyXG4gICAgLy9jb2xvcjogJHNlY29uZGFyeSAhaW1wb3J0YW50O1xyXG4gICAgLy9ib3JkZXItY29sb3I6ICRzZWNvbmRhcnk7XHJcbn1cclxuXHJcbi5wcm9qZWN0LmNhcmQge1xyXG4gIGJvcmRlci1yYWRpdXM6ICRyb3VuZGVkLWJvcmRlcnM7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgLy9tYXJnaW46IDEwcHggYXV0bztcclxuXHJcbiAgLmNhcmQtaW1nLXRvcCB7XHJcbiAgICBib3JkZXItcmFkaXVzOiAkcm91bmRlZC1ib3JkZXJzICRyb3VuZGVkLWJvcmRlcnMgMCAwO1xyXG4gIH1cclxuXHJcbiAgJjpob3Zlcjpub3QoLnBvc3QpIHtcclxuICAgIGJveC1zaGFkb3c6IC0ycHggOHB4IDQwcHggLTEycHggcmdiYSgwLCAwLCAwLCAwLjI0KTtcclxuICB9XHJcbn0iLCIuZm9vdGVySGFjayB7XG4gIHBhZGRpbmctdG9wOiA5MHB4O1xufVxuXG4uYmFkZ2Uge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbn1cblxuLnByb2plY3QuY2FyZCB7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZSAhaW1wb3J0YW50O1xufVxuLnByb2plY3QuY2FyZCAuY2FyZC1pbWctdG9wIHtcbiAgYm9yZGVyLXJhZGl1czogMTVweCAxNXB4IDAgMDtcbn1cbi5wcm9qZWN0LmNhcmQ6aG92ZXI6bm90KC5wb3N0KSB7XG4gIGJveC1zaGFkb3c6IC0ycHggOHB4IDQwcHggLTEycHggcmdiYSgwLCAwLCAwLCAwLjI0KTtcbn0iLCIkdGV4dC1jb2xvci1kYXJrOiMzNDNhNDA7XHJcbiR0ZXh0LWZvb3RlcjogIzZjNzU3ZDtcclxuXHJcblxyXG4vLyRwcmltYXJ5OiAgICMwMDdiZmY7XHJcbiRwcmltYXJ5OiAgICMzNDNhNDA7XHJcbiRzZWNvbmRhcnk6ICM2Yzc1N2Q7XHJcbiRzdWNjZXNzOiAgICMyOGE3NDU7XHJcbiRpbmZvOiAgICAgICMxN2EyYjg7XHJcbiR3YXJuaW5nOiAgICNmZmMxMDc7XHJcbiRkYW5nZXI6ICAgICNkYzM1NDU7XHJcbiRsaWdodDogICAgICNmOGY5ZmE7XHJcbiRkYXJrOiAgICAgICMzNDNhNDA7XHJcblxyXG4kcm91bmRlZC1ib3JkZXJzOiAxNXB4O1xyXG4iXX0= */";
+    __webpack_exports__["default"] = ".footerHack {\n  padding-top: 90px;\n}\n\n.badge {\n  margin-right: 5px;\n}\n\n.project.card {\n  border-radius: 15px;\n  text-decoration: none !important;\n}\n\n.project.card .card-img-top {\n  border-radius: 15px 15px 0 0;\n}\n\n.project.card:hover:not(.post) {\n  box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdHMvQzpcXENvZGVcXHBvcnRmb2xpby9zcmNcXGFwcFxccHJvamVjdHNcXHByb2plY3RzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wcm9qZWN0cy9wcm9qZWN0cy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcHJvamVjdHMvQzpcXENvZGVcXHBvcnRmb2xpby9zcmNcXHZhcmlhYmxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsaUJBQUE7QUNERjs7QURJQTtFQUNJLGlCQUFBO0FDREo7O0FETUE7RUFDRSxtQkVDZ0I7RUZBaEIsZ0NBQUE7QUNIRjs7QURNRTtFQUNFLDRCQUFBO0FDSko7O0FET0U7RUFDRSxtREFBQTtFQUNBLGVBQUE7QUNMSiIsImZpbGUiOiJzcmMvYXBwL3Byb2plY3RzL3Byb2plY3RzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdmFyaWFibGVzLnNjc3MnO1xyXG5cclxuLmZvb3RlckhhY2t7XHJcbiAgcGFkZGluZy10b3A6IDkwcHg7XHJcbn1cclxuXHJcbi5iYWRnZXtcclxuICAgIG1hcmdpbi1yaWdodDogNXB4O1xyXG4gICAgLy9jb2xvcjogJHNlY29uZGFyeSAhaW1wb3J0YW50O1xyXG4gICAgLy9ib3JkZXItY29sb3I6ICRzZWNvbmRhcnk7XHJcbn1cclxuXHJcbi5wcm9qZWN0LmNhcmQge1xyXG4gIGJvcmRlci1yYWRpdXM6ICRyb3VuZGVkLWJvcmRlcnM7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgLy9tYXJnaW46IDEwcHggYXV0bztcclxuXHJcbiAgLmNhcmQtaW1nLXRvcCB7XHJcbiAgICBib3JkZXItcmFkaXVzOiAkcm91bmRlZC1ib3JkZXJzICRyb3VuZGVkLWJvcmRlcnMgMCAwO1xyXG4gIH1cclxuXHJcbiAgJjpob3Zlcjpub3QoLnBvc3QpIHtcclxuICAgIGJveC1zaGFkb3c6IC0ycHggOHB4IDQwcHggLTEycHggcmdiYSgwLCAwLCAwLCAwLjI0KTtcclxuICAgIGN1cnNvcjpwb2ludGVyO1xyXG4gIH1cclxufVxyXG5cclxuIiwiLmZvb3RlckhhY2sge1xuICBwYWRkaW5nLXRvcDogOTBweDtcbn1cblxuLmJhZGdlIHtcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG5cbi5wcm9qZWN0LmNhcmQge1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cbi5wcm9qZWN0LmNhcmQgLmNhcmQtaW1nLXRvcCB7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHggMTVweCAwIDA7XG59XG4ucHJvamVjdC5jYXJkOmhvdmVyOm5vdCgucG9zdCkge1xuICBib3gtc2hhZG93OiAtMnB4IDhweCA0MHB4IC0xMnB4IHJnYmEoMCwgMCwgMCwgMC4yNCk7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn0iLCIkdGV4dC1jb2xvci1kYXJrOiMzNDNhNDA7XHJcbiR0ZXh0LWZvb3RlcjogIzZjNzU3ZDtcclxuXHJcblxyXG4vLyRwcmltYXJ5OiAgICMwMDdiZmY7XHJcbiRwcmltYXJ5OiAgICMzNDNhNDA7XHJcbiRzZWNvbmRhcnk6ICM2Yzc1N2Q7XHJcbiRzdWNjZXNzOiAgICMyOGE3NDU7XHJcbiRpbmZvOiAgICAgICMxN2EyYjg7XHJcbiR3YXJuaW5nOiAgICNmZmMxMDc7XHJcbiRkYW5nZXI6ICAgICNkYzM1NDU7XHJcbiRsaWdodDogICAgICNmOGY5ZmE7XHJcbiRkYXJrOiAgICAgICMzNDNhNDA7XHJcblxyXG4kcm91bmRlZC1ib3JkZXJzOiAxNXB4O1xyXG4iXX0= */";
     /***/
   },
 
@@ -1795,10 +2123,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SkillsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this3 = this;
 
           this.httpClient.get('assets/skills.json').subscribe(function (skillData) {
-            _this2.skills = skillData;
+            _this3.skills = skillData;
           });
         }
       }]);
@@ -1834,7 +2162,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
   /***/
   function srcAssetsProjectsJson(module) {
-    module.exports = JSON.parse("[{\"id\":\"008\",\"customer\":\"carla.land\",\"title\":\"Portfolio\",\"tags\":\"Angular, Bootstrap, FontAwesome, GithubPages, Git\",\"tagsArray\":[\"Angular\",\"Bootstrap\",\"FontAwesome\",\"GithubPages\",\"Git\"],\"description\":\"\",\"shortDescription\":\"Portfolio Webseite, die du hier siehst. Erstellt mit Angular.\",\"image\":\"./assets/carla-bw.jpg\"},{\"id\":\"007\",\"customer\":\"Büro Babette\",\"title\":\"KoRe Excel\",\"tags\":\"Excel\",\"tagsArray\":[\"Excel\"],\"description\":\"Toller Spass!\",\"shortDescription\":\"\",\"image\":\"./assets/babette.png\"},{\"id\":\"007\",\"customer\":\"Byffel\",\"title\":\"Projekt Nebelhorn\",\"tags\":\"\",\"tagsArray\":[\"Angular\",\"JavaScript\",\"Editor.js\",\"Kanban\",\"Agile\",\"Docker\",\"Kubernetes\"],\"description\":\"Privates Projekt, welches noch nicht spruchreif ist. Deshalb noch keine Beschreibung. Dafür ein Bild von einem herzigen Büffel.\",\"shortDescription\":\"\",\"image\":\"\"},{\"id\":\"006\",\"customer\":\"Kundin der bbv Software Services AG\",\"title\":\"Sidegrade\",\"tags\":\"Java, Scrum, TDD, Clean Code, Code Review, Jira, Jenkins, Git, Eclipse, IntelliJ, JBoss, Websphere, JUnit, Gerrit\",\"tagsArray\":[],\"description\":\"\",\"shortDescription\":\"\",\"image\":\"\"},{\"id\":\"005\",\"customer\":\"WELCOME Immobilien AG\",\"title\":\"Bachelordiplomarbeit: mySTWEG\",\"tags\":\"SoDa, Ionic Framework, Angular, Typescript, Cordova, C#, MS SQL, VSTS, Azure Cloud, Webstorm, Visual Studio, SQL Server Management Studio, Visual Studio App Center, Git\",\"tagsArray\":[\"SoDa\",\"Ionic Framework\",\"Angular\",\"Typescript\",\"Cordova\",\"C#\",\"MS SQL\",\"VSTS\",\"Azure Cloud\",\"Webstorm\",\"Visual Studio\",\"SQL Server Management Studio\",\"Visual Studio App Center\",\"Git\"],\"description\":\"Um die Kommunikation unter Eigentümer und zwischen der Immobilienfirma bei Stockwerkeigentumswohnungen zu vereinfachen, möchte WELCOME Immobilien eine Plattform lancieren. Im Rahmen meiner Bachelordiplomarbeit befasste ich mich in einem Zweierteam mit der Entwicklung der Architektur, der Wahl der geeigneten Technologien und dem Erstellen eines Prototypen einer Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen. Das Projekt wurde nach dem Projektmodell SoDa durchgeführt. Während der Initialisierungsphase habe ich die Anforderungen aufgenommen, die Architektur entwickelt und die geeigneten Technologien ausgewählt. Beim Entwickeln der Architektur musste berücksichtigt werden, dass die Lösung zu einem späteren Zeitpunkt als Software-as-a-Service eingesetzt werden soll (Skalierbarkeit). Ausserdem wurde das Architekturprinzip «Design for Change» mit in den Entwurf einbezogen. Anschliessen wurden die einzusetzenden Technologien in den Bereichen Datenbank, Front- und Backend evaluiert und ausgewählt. Während den darauffolgenden Sprints habe ich in der Rolle des Product Owners die User Stories priorisiert und in der Rolle der Entwicklerin umgesetzt. Als Scrummaster habe ich die Sprintreviews geleitet. Als Ergebnisse konnte ich der WELCOME Immobilien AG eine browserbasierte, responsive Webapplikation übergeben, die in allen gängigen Browsern und Betriebssystemen lauffähig ist. Zusätzlich zur Webapplikation wurde mithilfe von Cordova eine native Android App erstellt. Die dazugehörige Dokumentation soll die Weiterentwicklung von mySTWEG ermöglichen. Der entwickelte Prototyp ist bei der gesamten Belegschaft von WELCOME Immobilien AG auf Begeisterung gestossen. Auch andere Immobilienfirmen haben grosses Interesse am Prototypen gezeigt. SoDa: 'Software Development agile' - basiert auf dem Vorgehensmodell Scrum und bindet dieses in einen Projektmanagement-Rahmen ein (Scrum-Adaption der Hochschule Luzern)\",\"shortDescription\":\"Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen - Android App und Website\",\"image\":\"./assets/mystweg.jpg\"},{\"id\":\"004\",\"customer\":\"HSLU\",\"title\":\"GoloLens\",\"tags\":\"SoDa, Pair Programming, Unity Game Engine, Visual Studio, C#.NET, Blender\",\"tagsArray\":[\"SoDa\",\"Pair Programming\",\"Unity Game Engine\",\"Visual Studio\",\"C#.NET\",\"Blender\"],\"description\":\"Das Ziel des Projekts ist es, einen Spiel-Prototypen für die Microsoft HoloLens zu entwickeln. Der Prototyp soll aufzeigen, was mit der Mixed Reality Brille möglich ist. Ich entwickelte als Teil eines Zweierteams ein Spiel in Unity Game Engine, welches die Microsoft HoloLens verwendet. Die dazugehörigen Scripts wurden mit C# entwickelt, die graphischen Elemente (Assets) mit Blender. Der Projektauftrag hat vorgesehen, ein Go Spiel zu entwickeln, welches von zwei Spielern mit je einer HoloLens im selben Raum gespielt werden kann. Als Projektvorgehensmodell wurde SoDa gewählt. Da das Projekt einen explorativen Charakter aufweist, haben wir eine lange Initialisierungsphase gewählt. Während dieser Phase konnten viele offenen Fragen geklärt und die geeignete Technologie ausgewählt werden. In den darauffolgenden Sprints wurde der Prototyp entwickelt. Das Informatikprojekt ist erfolgreich abgeschlossen und die HSLU verfügt über einen Prototypen, der für Vorführungen, sowie im Mixed Reality Lab der Hochschule verwendet werden kann. \",\"shortDescription\":\"Spielentwicklung für Microsoft HoloLens\",\"image\":\"\"},{\"id\":\"003\",\"customer\":\"HSLU\",\"title\":\"Webshop iCompany\",\"tags\":\"Java EE, JSF, JPA, JAX-WS, JAX-RS, JMS, Apache TomEE, Postman, SoapUI, IntelliJ, MySQL, Primefaces, Git\",\"tagsArray\":[\"Java EE\",\"JSF\",\"JPA\",\"JAX-WS\",\"JAX-RS\",\"JMS\",\"Apache TomEE\",\"Postman\",\"SoapUI\",\"IntelliJ\",\"MySQL\",\"Primefaces\",\"Git\"],\"description\":\"iCompany ist eine virtuelle Unternehmung, welche als Handelsunternehmen im Musikbereich konzipiert ist. Sie dient an der HSLU Informatik als «Übungsanlage» für die Lehre in verschiedenen Modulen. Im Modul Enterprise Applications habe ich einen Webshop für den Verkauf von Mediendateien konzipiert und entwickelt. Durch den vorgegebenen Technologiestack konnte ich so Erfahrungen mit Java EE sammeln. Die Mediendateien werden über eine Schnittstelle zum ERP-System der iCompany (Microsoft Dynamics NAV) ausgelesen und im Webshop angezeigt. Die Bezahlung der gekauften Artikel werden über das Zahlungssystem der PostFinance ausgeführt. Nachdem die Verkäufe abgewickelt sind, werden sie per JMS ins ERP-System gespeichert. Das Modul konnte ich erfolgreich abschliessen und einen Überblick über die Entwicklung einer Enterprise Applikation gewinnen.\",\"shortDescription\":\"\",\"image\":\"\"},{\"id\":\"002\",\"customer\":\"Sage Schweiz AG\",\"title\":\"Sage 200 Absenzenmanagement\",\"tags\":\"Scrum, C#, MS SQL, ASP.NET, TFS, HTML, CSS, JavaScript\",\"tagsArray\":[\"Scrum\",\"C#\",\"MS SQL\",\"ASP.NET\",\"TFS\",\"HTML\",\"CSS\",\"JavaScript\"],\"description\":\"Sage200 ist eine ERP-Software als Komplettlösung für mittelgrosse Unternehmen. Das Sage200 Personal Modul bietet Funktionen für die Erfassung von Absenzen für Mitarbeiter. Diese sollen einfacher zu benutzen und selbsterklärender gestaltet werden. Zusammen mit dem Scrum-Team habe ich die webbasierte Lösung «Absenzenmanagement» weiterentwickelt und gewartet. Dabei habe ich zusammen mit dem Product Owner die User Stories priorisiert und dann umgesetzt. Unterstützung erhielt ich beim Anpassen von konsumierten Services oder Fragen zu Best-Practices durch die Architektur-Abteilung. Das Tool «Absenzenmanagement» ermöglicht es den Sage200 Personal-Benutzern, einfacher Absenzen eintragen zu können, sowie die Übersicht über Absenzen innerhalb des Teams zu verbessern.\",\"shortDescription\":\"Sage200 Absenzenmanagement: Weblösung für Sage200 Benutzer\",\"image\":\"\"},{\"id\":\"001\",\"customer\":\"Sage Schweiz AG\",\"title\":\"Weiterentwicklung und Wartung Sage200 Personal und CRM\",\"tags\":\"Scrum, C#, MS SQL, CrystalReports, .NET Core, TFS\",\"tagsArray\":[\"Scrum\",\"C#\",\"MSSQL\",\"CrystalReports\",\".NET Core\",\"TFS\"],\"description\":\"Die Bedienung der Sage200 - Module Personal und CRM war erschwert und die Ergebnisse inkonsistent. Zusammen mit dem Scrum Team konnte ich die bestehenden Schwachstellen priorisieren und verbessern. Bestehende Unit Tests konnte ich korrigieren und fehlende neu hinzufügen. Durch die Scrum Team-übergreifenden Review Meetings und Abnahmetests konnte ich sicherstellen, dass die Schwachstellen behoben sind. Sage Schweiz AG freut sich über eine stabile Software mit konsistentem Verhalten. Die verbesserte Usability ermöglicht es den Benutzern, die Software ohne zusätzliche Hilfe durch den Support zu bedienen.\",\"shortDescription\":\"Beschreibung Anstellung bei Sage Schweiz AG\",\"image\":\"\"}]");
+    module.exports = JSON.parse("[{\"id\":\"008\",\"customer\":\"carla.land\",\"title\":\"Portfolio\",\"tags\":\"Angular, Bootstrap, FontAwesome, GithubPages, Git\",\"tagsArray\":[\"Angular\",\"Bootstrap\",\"FontAwesome\",\"GithubPages\",\"Git\"],\"description\":\"TBD! TBD! TBD! Jeder Fotograf, jede Grafikerin verfügt über ein Portfolio, um bei einer Bewerbung ihre oder seine Arbeiten vorzustellen. Auch für potentielle Kundinnen und Kunden ist es toll, die «Internetzige» Visitenkarte anschauen zu können, bevor man sich für eine Zusammenarbeit entscheidet, ... \",\"shortDescription\":\"Portfolio Webseite, die du hier siehst. Erstellt mit Angular.\",\"image\":\"./assets/carla-bw.jpg\"},{\"id\":\"007\",\"customer\":\"Büro Babette\",\"title\":\"KoRe Excel\",\"tags\":\"\",\"tagsArray\":[\"Excel\",\"MSSQL\",\"Agile\"],\"description\":\"Die Firma erlebe babette gmbh ist ein Dienstleistungsunternehmen im eHealth Bereich. Während zwei Monaten durfte ich sie bei der Anpassung und Verifizierung von Excel Vorlagen im Bereich Kostenrechnung unterstützen.\",\"shortDescription\":\"\",\"image\":\"./assets/babette.png\"},{\"id\":\"007\",\"customer\":\"Byffel\",\"title\":\"Projekt Nebelhorn\",\"tags\":\"\",\"tagsArray\":[\"Angular\",\"JavaScript\",\"Editor.js\",\"Kanban\",\"Agile\",\"Docker\",\"Kubernetes\"],\"description\":\"Privates Projekt, welches noch nicht spruchreif ist. Deshalb noch keine Beschreibung. Dafür ein Bild von einem herzigen Büffel.\",\"shortDescription\":\"\",\"image\":\"\"},{\"id\":\"006\",\"customer\":\"Kundin der bbv Software Services AG\",\"title\":\"Sidegrade\",\"tags\":\"\",\"tagsArray\":[\"Java\",\"Scrum\",\"TDD\",\"Clean Code\",\"Code Review\",\"Jira\",\"Jenkins\",\"Git\",\"Eclipse\",\"IntelliJ\",\"JBoss\",\"Websphere\",\"JUnit\",\"Gerrit\"],\"description\":\"Löwenfels & Partner AG (LöPa) entwickelt seit mehreren Jahren die AHV-Software «NIL», die bei mehreren kantonalen Ausgleichskassen im Einsatz ist. Anfang 2020 soll NIL durch dessen Nachfolger B&Z Core abgelöst werden. NIL und B&Z Core bauen auf einem von LöPa selbst entwickelten Framework auf, welches unter anderem automatisierte UI Tests (Webtests) ermöglicht. Bisher wurden diese Webtests vor allem für den Regelfall und somit den «Standard»-Kanton geschrieben. Als Teil eines Scrum Teams habe ich mich um das Instandsetzen von nicht erfolgreich durchlaufenden Webtests eingesetzt. Dafür traf ich Abklärungen mit dem Product Management und den Kunden, prüfte die bestehende Konfiguration mit dem Product Owner und verifizierte mein Vorgehen mit dem Technologie-Team von LöPa. Durch Projekt Sidegrade konnte die Testabdeckung erhöht, sowie bereits erledigte Migrationsarbeiten vereinfacht verifiziert werden.\",\"shortDescription\":\"\",\"image\":\"\"},{\"id\":\"005\",\"customer\":\"WELCOME Immobilien AG\",\"title\":\"Bachelordiplomarbeit: mySTWEG\",\"tags\":\"SoDa, Ionic Framework, Angular, Typescript, Cordova, C#, MS SQL, VSTS, Azure Cloud, Webstorm, Visual Studio, SQL Server Management Studio, Visual Studio App Center, Git\",\"tagsArray\":[\"SoDa\",\"Ionic Framework\",\"Angular\",\"Typescript\",\"Cordova\",\"C#\",\"MS SQL\",\"VSTS\",\"Azure Cloud\",\"Webstorm\",\"Visual Studio\",\"SQL Server Management Studio\",\"Visual Studio App Center\",\"Git\"],\"description\":\"Um die Kommunikation unter Eigentümer und zwischen der Immobilienfirma bei Stockwerkeigentumswohnungen zu vereinfachen, möchte WELCOME Immobilien eine Plattform lancieren. Im Rahmen meiner Bachelordiplomarbeit befasste ich mich in einem Zweierteam mit der Entwicklung der Architektur, der Wahl der geeigneten Technologien und dem Erstellen eines Prototypen einer Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen. Das Projekt wurde nach dem Projektmodell SoDa durchgeführt. Während der Initialisierungsphase habe ich die Anforderungen aufgenommen, die Architektur entwickelt und die geeigneten Technologien ausgewählt. Beim Entwickeln der Architektur musste berücksichtigt werden, dass die Lösung zu einem späteren Zeitpunkt als Software-as-a-Service eingesetzt werden soll (Skalierbarkeit). Ausserdem wurde das Architekturprinzip «Design for Change» mit in den Entwurf einbezogen. Anschliessen wurden die einzusetzenden Technologien in den Bereichen Datenbank, Front- und Backend evaluiert und ausgewählt. Während den darauffolgenden Sprints habe ich in der Rolle des Product Owners die User Stories priorisiert und in der Rolle der Entwicklerin umgesetzt. Als Scrummaster habe ich die Sprintreviews geleitet. Als Ergebnisse konnte ich der WELCOME Immobilien AG eine browserbasierte, responsive Webapplikation übergeben, die in allen gängigen Browsern und Betriebssystemen lauffähig ist. Zusätzlich zur Webapplikation wurde mithilfe von Cordova eine native Android App erstellt. Die dazugehörige Dokumentation soll die Weiterentwicklung von mySTWEG ermöglichen. Der entwickelte Prototyp ist bei der gesamten Belegschaft von WELCOME Immobilien AG auf Begeisterung gestossen. Auch andere Immobilienfirmen haben grosses Interesse am Prototypen gezeigt. SoDa: 'Software Development agile' - basiert auf dem Vorgehensmodell Scrum und bindet dieses in einen Projektmanagement-Rahmen ein (Scrum-Adaption der Hochschule Luzern)\",\"shortDescription\":\"Kommunikationsplattform für Stockwerkeigentümer und Immobilienverwaltungen - Android App und Website\",\"image\":\"./assets/mystweg.jpg\"},{\"id\":\"004\",\"customer\":\"HSLU\",\"title\":\"GoloLens\",\"tags\":\"SoDa, Pair Programming, Unity Game Engine, Visual Studio, C#.NET, Blender\",\"tagsArray\":[\"SoDa\",\"Pair Programming\",\"Unity Game Engine\",\"Visual Studio\",\"C#.NET\",\"Blender\"],\"description\":\"Das Ziel des Projekts ist es, einen Spiel-Prototypen für die Microsoft HoloLens zu entwickeln. Der Prototyp soll aufzeigen, was mit der Mixed Reality Brille möglich ist. Ich entwickelte als Teil eines Zweierteams ein Spiel in Unity Game Engine, welches die Microsoft HoloLens verwendet. Die dazugehörigen Scripts wurden mit C# entwickelt, die graphischen Elemente (Assets) mit Blender. Der Projektauftrag hat vorgesehen, ein Go Spiel zu entwickeln, welches von zwei Spielern mit je einer HoloLens im selben Raum gespielt werden kann. Als Projektvorgehensmodell wurde SoDa gewählt. Da das Projekt einen explorativen Charakter aufweist, haben wir eine lange Initialisierungsphase gewählt. Während dieser Phase konnten viele offenen Fragen geklärt und die geeignete Technologie ausgewählt werden. In den darauffolgenden Sprints wurde der Prototyp entwickelt. Das Informatikprojekt ist erfolgreich abgeschlossen und die HSLU verfügt über einen Prototypen, der für Vorführungen, sowie im Mixed Reality Lab der Hochschule verwendet werden kann. \",\"shortDescription\":\"Spielentwicklung für Microsoft HoloLens\",\"image\":\"\"},{\"id\":\"003\",\"customer\":\"HSLU\",\"title\":\"Webshop iCompany\",\"tags\":\"Java EE, JSF, JPA, JAX-WS, JAX-RS, JMS, Apache TomEE, Postman, SoapUI, IntelliJ, MySQL, Primefaces, Git\",\"tagsArray\":[\"Java EE\",\"JSF\",\"JPA\",\"JAX-WS\",\"JAX-RS\",\"JMS\",\"Apache TomEE\",\"Postman\",\"SoapUI\",\"IntelliJ\",\"MySQL\",\"Primefaces\",\"Git\"],\"description\":\"iCompany ist eine virtuelle Unternehmung, welche als Handelsunternehmen im Musikbereich konzipiert ist. Sie dient an der HSLU Informatik als «Übungsanlage» für die Lehre in verschiedenen Modulen. Im Modul Enterprise Applications habe ich einen Webshop für den Verkauf von Mediendateien konzipiert und entwickelt. Durch den vorgegebenen Technologiestack konnte ich so Erfahrungen mit Java EE sammeln. Die Mediendateien werden über eine Schnittstelle zum ERP-System der iCompany (Microsoft Dynamics NAV) ausgelesen und im Webshop angezeigt. Die Bezahlung der gekauften Artikel werden über das Zahlungssystem der PostFinance ausgeführt. Nachdem die Verkäufe abgewickelt sind, werden sie per JMS ins ERP-System gespeichert. Das Modul konnte ich erfolgreich abschliessen und einen Überblick über die Entwicklung einer Enterprise Applikation gewinnen.\",\"shortDescription\":\"\",\"image\":\"\"},{\"id\":\"002\",\"customer\":\"Sage Schweiz AG\",\"title\":\"Sage200 Absenzenmanagement\",\"tags\":\"Scrum, C#, MS SQL, ASP.NET, TFS, HTML, CSS, JavaScript\",\"tagsArray\":[\"Scrum\",\"C#\",\"MS SQL\",\"ASP.NET\",\"TFS\",\"HTML\",\"CSS\",\"JavaScript\"],\"description\":\"Sage200 ist eine ERP-Software als Komplettlösung für mittelgrosse Unternehmen. Das Sage200 Personal Modul bietet Funktionen für die Erfassung von Absenzen für Mitarbeiter. Diese sollen einfacher zu benutzen und selbsterklärender gestaltet werden. Zusammen mit dem Scrum-Team habe ich die webbasierte Lösung «Absenzenmanagement» weiterentwickelt und gewartet. Dabei habe ich zusammen mit dem Product Owner die User Stories priorisiert und dann umgesetzt. Unterstützung erhielt ich beim Anpassen von konsumierten Services oder Fragen zu Best-Practices durch die Architektur-Abteilung. Das Tool «Absenzenmanagement» ermöglicht es den Sage200 Personal-Benutzern, einfacher Absenzen eintragen zu können, sowie die Übersicht über Absenzen innerhalb des Teams zu verbessern.\",\"shortDescription\":\"Sage200 Absenzenmanagement: Weblösung für Sage200 Benutzer\",\"image\":\"\"},{\"id\":\"001\",\"customer\":\"Sage Schweiz AG\",\"title\":\"Sage200\",\"tags\":\"Scrum, C#, MS SQL, CrystalReports, .NET Core, TFS\",\"tagsArray\":[\"Scrum\",\"C#\",\"MSSQL\",\"CrystalReports\",\".NET Core\",\"TFS\"],\"description\":\"Die Bedienung der Sage200 - Module Personal und CRM war erschwert und die Ergebnisse inkonsistent. Zusammen mit dem Scrum Team konnte ich die bestehenden Schwachstellen priorisieren und verbessern. Bestehende Unit Tests konnte ich korrigieren und fehlende neu hinzufügen. Durch die Scrum Team-übergreifenden Review Meetings und Abnahmetests konnte ich sicherstellen, dass die Schwachstellen behoben sind. Sage Schweiz AG freut sich über eine stabile Software mit konsistentem Verhalten. Die verbesserte Usability ermöglicht es den Benutzern, die Software ohne zusätzliche Hilfe durch den Support zu bedienen.\",\"shortDescription\":\"Weiterentwicklung und Wartung Sage200 Personal und CRM\",\"image\":\"\"}]");
     /***/
   },
 
