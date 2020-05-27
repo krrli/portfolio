@@ -1,4 +1,4 @@
-export interface Jobs{
+export interface Jobs {
   jobs: any[];
   dateFrom: Date;
   dateTo: Date;
