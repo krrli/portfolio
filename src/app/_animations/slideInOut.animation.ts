@@ -13,6 +13,7 @@ export const slideInOutAnimation =
             right: 0,
             bottom: 0,
             backgroundColor: 'rgba(0, 0, 0, 0.8)'
+            //backgroundColor: 'rgba(0, 0, 0, 0)'
         })),
 
         // route 'enter' transition
@@ -35,6 +36,7 @@ export const slideInOutAnimation =
 
                 // transition the background opacity to 0.8 to fade it in
                 backgroundColor: 'rgba(0, 0, 0, 0.8)'
+                //backgroundColor: 'rgba(0, 0, 0, 0)'
             }))
         ]),
 

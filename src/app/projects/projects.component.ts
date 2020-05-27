@@ -3,14 +3,19 @@ import { ProjectService } from './../project.service';
 import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Projects } from '../projects';
-
+import { slideInOutAnimation  } from '../_animations/index';
 
 
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+    // make slide in/out animation available to this component
+    //animations: [slideInOutAnimation],
+
+    // attach the slide in/out animation to the host (root) element of this component
+    //host: { '[@slideInOutAnimation]': '' }
 })
 export class ProjectsComponent implements OnInit {
   projects: Projects[];
