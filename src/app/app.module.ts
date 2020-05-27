@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,9 +38,10 @@ import { ProjectDetailSliderComponent } from './project-detail-slider/project-de
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    NgbModalModule
+    NgbModalModule,
+    BrowserAnimationsModule
   ],
-  exports:[ProjectDetailComponent],
+  exports: [ProjectDetailComponent],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [ProjectDetailComponent]
