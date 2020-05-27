@@ -1,6 +1,14 @@
 
-<div *ngIf="project$ | async as project">
-  <h3>{{ project.title }}</h3>
+<div class=project *ngIf="project$ | async as project">
+
+  <div class=text>
+    <a routerLink="../../projects"><fa-icon [icon]="['fas', 'chevron-left']"></fa-icon></a>
+
+    <h3>{{ project.title }}</h3>
+    <br>
+    {{ project.description }}
+  </div>
   <br>
-  {{ project.description }}
 </div>
+
+

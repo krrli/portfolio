@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'project-detail/:id', component: ProjectDetailComponent},
   {path: 'project-detail-slider/:id', component: ProjectDetailSliderComponent},
   {path: '', redirectTo: '/hello', pathMatch: 'full'
+
 }
 ];
 

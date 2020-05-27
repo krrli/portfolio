@@ -3,6 +3,8 @@
   <div class="card-columns">
     <div *ngFor="let project of projects">
 
+      <!--td><a [routerLink]="['edit', product.id]">{{product.name}}</a></td-->
+
       <div class="card project card" routerLink ="/project-detail-slider/{{project.id}}">
       <!--to open details as popup-->
       <!--div class="card project card" (click)="openDetails(project)"-->
