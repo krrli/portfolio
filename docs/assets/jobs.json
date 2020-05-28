@@ -8,6 +8,14 @@
     "employmentRate": "100%"
   },
   {
+    "dateFrom": "2019-12",
+    "dateTo": "2020-01",
+    "companyName": "erlebe babette gmbh",
+    "function": "Informatikerin",
+    "description": "Excel, MSSQL, Agile Entwicklung",
+    "employmentRate": "20%"
+  },
+  {
     "dateFrom": "2018-09",
     "dateTo": "2019-07",
     "companyName": "bbv Software Services AG",

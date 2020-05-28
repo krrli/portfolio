@@ -1,18 +1,18 @@
 [
      {
-        "id": "008",
+        "id": "009",
         "customer": "carla.land",
         "title":"Portfolio",
         "tags":"Angular, Bootstrap, FontAwesome, GithubPages, Git",
         "tagsArray":[
             "Angular", "Bootstrap", "FontAwesome", "GithubPages", "Git"
         ],
-        "description":"TBD! TBD! TBD! Jeder Fotograf, jede Grafikerin verfügt über ein Portfolio, um bei einer Bewerbung ihre oder seine Arbeiten vorzustellen. Auch für potentielle Kundinnen und Kunden ist es toll, die «Internetzige» Visitenkarte anschauen zu können, bevor man sich für eine Zusammenarbeit entscheidet, ... ",
-        "shortDescription":"Portfolio Webseite, die du hier siehst. Erstellt mit Angular.",
+        "description":"Jede Fotografin, jeder Grafiker hat eines – ein Portfolio. Auch für potenzielle Kundinnen, Auftrag- und Arbeitgeber ist es toll, die digitale Visitenkarte anschauen zu können, bevor man sich für eine Zusammenarbeit entscheidet. Ausserdem ist dieses private Projekt eine gute Möglichkeit, neues dazuzulernen und trotz Reisen und Auszeit am Ball zu bleiben.",
+        "shortDescription":"Portfolio in Angular",
         "image": "./assets/carla-bw.jpg"
     },
     {
-        "id": "007",
+        "id": "008",
         "customer": "Büro Babette",
         "title":"KoRe Excel",
         "tags":"",
@@ -29,7 +29,7 @@
         "tagsArray":[
             "Angular","JavaScript","Editor.js","Kanban","Agile","Docker", "Kubernetes"
         ],
-        "description":"Privates Projekt, welches noch nicht spruchreif ist. Deshalb noch keine Beschreibung. Dafür ein Bild von einem herzigen Büffel.",
+        "description":"Privates Projekt, welches noch nicht spruchreif ist. Deshalb gibt es noch keine Beschreibung =). Dieses Projekt dient vorallem als Platzhalter für die verwendeten Tools & Technologien.",
         "shortDescription":"",
         "image":""
     },
