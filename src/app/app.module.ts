@@ -18,6 +18,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
+import { EducationComponent } from './education/education.component';
 
 
 
@@ -31,7 +32,8 @@ import { ProjectDetailSliderComponent } from './project-detail-slider/project-de
     FooterComponent,
     SkillsComponent,
     ProjectDetailComponent,
-    ProjectDetailSliderComponent
+    ProjectDetailSliderComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { EducationComponent } from './education/education.component';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -10,6 +11,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: 'cv', component: CvComponent},
+  {path: 'education', component: EducationComponent},
   // {path: 'skills', component: SkillsComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'hello', component: HelloComponent},

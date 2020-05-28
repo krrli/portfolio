@@ -1,0 +1,32 @@
+[
+  {
+    "dateFrom": "2019-03",
+    "dateTo": "",
+    "title": "Certified Scrum Master",
+    "institution": "Scrum Alliance"
+  },
+  {
+    "dateFrom": "2014-09",
+    "dateTo": "2019-02",
+    "title": "Bachelor of Science / FHZ in Informatik ",
+    "institution": "Hochschule Luzern"
+  },
+  {
+    "dateFrom": "2010-08",
+    "dateTo": "2012-07",
+    "title": "Technische Berufsmatura",
+    "institution": "Berufsbildungszentrum Luzern"
+  },
+  {
+    "dateFrom": "2006-08",
+    "dateTo": "2010-07",
+    "title": "Berufsschule",
+    "institution": "Berufsbildungszentrum Sursee"
+  },
+  {
+    "dateFrom": "1997-08",
+    "dateTo": "2006-07",
+    "title": "Primar- und Sekundarschule",
+    "institution": "Schule Ettiswil"
+  }
+]
