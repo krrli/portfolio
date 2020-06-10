@@ -15,11 +15,8 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee, faHeart, faCode, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import { SkillsComponent } from './skills/skills.component';
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
-import { EducationComponent } from './education/education.component';
-import { TimelineComponent } from './timeline/timeline.component';
 
 
 
@@ -32,10 +29,9 @@ import { TimelineComponent } from './timeline/timeline.component';
     HeaderComponent,
     FooterComponent,
     SkillsComponent,
-    ProjectDetailComponent,
     ProjectDetailSliderComponent,
-    EducationComponent,
-    TimelineComponent
+    // EducationComponent,
+    // TimelineComponent
   ],
   imports: [
     BrowserModule,
@@ -45,10 +41,10 @@ import { TimelineComponent } from './timeline/timeline.component';
     NgbModalModule,
     BrowserAnimationsModule
   ],
-  exports: [ProjectDetailComponent],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ProjectDetailComponent]
+  entryComponents: []
 
 })
 export class AppModule {
