@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { Skills } from '../skills';
+import { Skills } from '../_interfaces/skills';
 
 @Component({
   selector: 'krrli-skills',
@@ -15,13 +15,13 @@ export class SkillsComponent implements OnInit {
   //methods: Skills[] = this.skills.pipe(filter(skill => console.log(skill.category)));
   tools: Skills[];
 
-  constructor(private httpClient: HttpClient) {     
+  constructor(private httpClient: HttpClient) {
   }
 
-  ngOnInit() {    
+  ngOnInit() {
     this.httpClient.get('assets/skills.json').subscribe(
       skillData => {
-        this.skills = skillData as Observable<Skills[]>;        
+        this.skills = skillData as Observable<Skills[]>;
       }
     );
 

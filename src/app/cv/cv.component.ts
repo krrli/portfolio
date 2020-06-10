@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Jobs } from '../jobs';
+import { Jobs } from '../_interfaces/jobs';
 
 
 @Component({

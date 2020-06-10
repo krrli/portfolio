@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Projects } from '../projects';
+import { Projects } from '../_interfaces/projects';
 import { switchMap } from 'rxjs/operators';
-import { ProjectService } from '../project.service';
+import { ProjectService } from '../_services/project.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable } from 'rxjs';
 import { slideInOutAnimation } from '../_animations/index';

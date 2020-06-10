@@ -1,7 +1,7 @@
-import { ProjectService } from './../project.service';
+import { ProjectService } from '../_services/project.service';
 import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Projects } from '../projects';
+import { Projects } from '../_interfaces/projects';
 import { slideInOutAnimation  } from '../_animations/index';
 
 
