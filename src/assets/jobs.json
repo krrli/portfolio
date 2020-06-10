@@ -16,6 +16,22 @@
     "employmentRate": "20%"
   },
   {
+    "dateFrom": "2019-03",
+    "dateTo": "2019-03",
+    "companyName": "Scrum Alliance",
+    "function": "Certified Scrum Master",
+    "description": "Agile Entwicklung",
+    "employmentRate": "20%"
+  },
+  {
+    "dateFrom": "2014-09",
+    "dateTo": "2020-02",
+    "companyName": "Hochschule Luzern",
+    "function": "Bachelor of Science in Computer Science",
+    "description": "Agile Entwicklung, .NET, Webentwicklung, Angular, Java, Java EE, Git",
+    "employmentRate": "150%"
+  },
+  {
     "dateFrom": "2018-09",
     "dateTo": "2019-07",
     "companyName": "bbv Software Services AG",

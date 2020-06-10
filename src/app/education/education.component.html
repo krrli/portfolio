@@ -5,12 +5,8 @@
         <div class="content">
           <h4>{{edu.title}}</h4>
           <h5>{{edu.institution}}</h5>
-          <!--h4>{{job.function}}</h4>
-          <h5>{{job.companyName}}</h5-->
           <h5 class="date" *ngIf="dateToIsEmpty(edu.dateTo); else elseBlock">{{edu.dateFrom | date:'yyyy'}} - {{edu.dateTo | date:'yyyy'}}</h5>
           <ng-template #elseBlock><h5 class="date">{{edu.dateFrom | date:'yyyy'}}</h5></ng-template>
-          <!--p class="description">{{job.description}}</p-->
-
         </div>
       </div>
   </div>

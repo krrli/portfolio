@@ -1,5 +1,9 @@
 $text-color-dark:#343a40;
 $text-footer: #6c757d;
+//$primary-color: #FF6B6B;
+$primary-color-timeline: #007bff;
+$primary-color-hover-timeline: scale-color($primary-color-timeline, $lightness: 32%);
+$left-border-color-timeline: #CCD5DB;
 
 
 //$primary:   #007bff;
@@ -13,3 +17,7 @@ $light:     #f8f9fa;
 $dark:      #343a40;
 
 $rounded-borders: 15px;
+
+.footerHack{
+  padding-top: 95px;
+}
