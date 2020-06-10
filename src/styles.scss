@@ -19,6 +19,45 @@ a:hover, a:visited, a:link, a:active{
 }
 
 
+.timeline-item:hover  .timeline-marker:before {
+  //background: transparent;
+  background: white;
+  border: 3px solid $primary-color-timeline;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 15px;
+  z-index: 1;
+  &:before {
+      background: $primary-color-timeline;
+      //border: 3px solid transparent;
+      border: 3px solid white;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 15px;
+      position: absolute;
+      top: 8px; left: -10px;
+      width: 15px;
+      transition: background 0.3s ease-in-out,
+      border 0.3s ease-in-out;
+  }
+  &:after {
+      content: "";
+      width: 3px;
+      background: #CCD5DB;
+      display: block;
+      position: absolute;
+      top: 24px; bottom: 0; left: 6px;
+      z-index: 5;
+
+  }
+  .timeline-item:last-child &:after {
+      content: none;
+  }
+}
 
 .timeline-body {
   position: relative;
@@ -30,31 +69,19 @@ a:hover, a:visited, a:link, a:active{
   &:after {
     // Left Border
     content: "";
-    width: 4px;
+    width: 3px;
     height: 100%;
     //background-color: $primary;
-    background-color: $secondary;
+    background-color: $left-border-color-timeline;
     position: absolute;
     left: -4px;
-    top: 0;
+    top: 24px;
   }
+
 
   .timeline-item {
     position: relative;
-
-    &:after {
-      // Circle
-      content: "";
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      border: 4px solid $primary;
-      background-color: $light;
-      position: absolute;
-      left: -9px;
-      top: 8px;
-      z-index: 10;
-    }
+    padding-left: 40px;
 
     .content {
 

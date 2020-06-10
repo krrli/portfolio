@@ -19,6 +19,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
 import { EducationComponent } from './education/education.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 
 
@@ -33,7 +34,8 @@ import { EducationComponent } from './education/education.component';
     SkillsComponent,
     ProjectDetailComponent,
     ProjectDetailSliderComponent,
-    EducationComponent
+    EducationComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
