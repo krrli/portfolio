@@ -1,9 +1,8 @@
+import { Projects } from './../_interfaces/projects';
 import { HttpClient } from '@angular/common/http';
-import { Projects } from './projects';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import projects from '../assets/projects.json';
+import projects from '../../assets/projects.json';
 
 
 
@@ -11,7 +10,6 @@ import projects from '../assets/projects.json';
   providedIn: 'root'
 })
 export class ProjectService {
-
 
 
   constructor() {}
@@ -25,7 +23,7 @@ export class ProjectService {
 
   getProject(id: string) {
     return this.getProjects().filter(p => p.id.includes(id))
-    .sort((a,b) => a.id.includes(id) && !b.id.includes(id) ? -1 : b.id.includes(id) && !a.id.includes(id) ? 1 :0);
+    .sort((a, b) => a.id.includes(id) && !b.id.includes(id) ? -1 : b.id.includes(id) && !a.id.includes(id) ? 1 : 0);
 
   }
 
