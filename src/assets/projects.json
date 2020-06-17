@@ -5,7 +5,7 @@
         "title":"Portfolio",
         "tags":"Angular, Bootstrap, FontAwesome, GithubPages, Git",
         "tagsArray":[
-            "Angular", "Bootstrap", "FontAwesome", "GithubPages", "Git"
+            "Angular", "Bootstrap", "FontAwesome", "GithubPages", "Git", "Netlify", "Json", "Sass"
         ],
         "description":"Jede Fotografin, jeder Grafiker hat eines – ein Portfolio. Auch für potenzielle Kundinnen, Auftrag- und Arbeitgeber ist es toll, die digitale Visitenkarte anschauen zu können, bevor man sich für eine Zusammenarbeit entscheidet. Ausserdem ist dieses private Projekt eine gute Möglichkeit, neues dazuzulernen und trotz Reisen und Auszeit am Ball zu bleiben.",
         "shortDescription":"Portfolio in Angular",
