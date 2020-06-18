@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
 
-  <a class="navbar-brand" href="#"><h1>Carla Iten</h1></a>
+  <a class="navbar-brand" href="#" (click)="setDocTitle( 'it´s carla' )"><h1>Carla Iten</h1></a>
   <div class="navbar-header">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
@@ -15,34 +15,17 @@
       <!--li class="nav-item">
         <a class="nav-link" routerLink="/hello" routerLinkActive="active">hello</a>
       </li-->
-
       <li class="nav-item">
-        <a class="nav-link" routerLink="/cv" routerLinkActive="active">CV</a>
+        <a class="nav-link" routerLink="/cv" routerLinkActive="active" (click)="setDocTitle( 'it´s carla | CV' )">CV</a>
       </li>
       <!--li class="nav-item">
         <a class="nav-link" routerLink="/skills" routerLinkActive="active">Mein Rucksäckli</a>
       </li-->
       <li class="nav-item">
-        <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projekte</a>
+        <a class="nav-link" routerLink="/projects" routerLinkActive="active" (click)="setDocTitle( 'it´s carla | Projekte' )">Projekte</a>
       </li>
     </ul>
   </div>
-
-<!--
-<div class="navbar-collapse collapse">
-  <ul class="nav navbar-nav">
-      <li><a href="#">Left</a></li>
-  </ul>
-  <ul class="nav navbar-nav navbar-center">
-      <li><a href="#">Center</a></li>
-      <li><a href="#">Center</a></li>
-    <li><a href="#">Center</a></li>
-  </ul>
-  <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Right</a></li>
-  </ul>
-  </div>
-  -->
 </nav>
 
 
