@@ -1,5 +1,6 @@
 export interface Skills {
+  id: string;
   title: string;
   category: string;
-  level: number;
+  percentage: number;
 }

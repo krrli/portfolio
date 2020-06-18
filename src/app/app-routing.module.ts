@@ -9,7 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: 'cv', component: CvComponent},
-  // {path: 'skills', component: SkillsComponent},
+  {path: 'skills', component: SkillsComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'hello', component: HelloComponent},
   {path: 'project-detail-slider/:id', component: ProjectDetailSliderComponent},
