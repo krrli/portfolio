@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,9 +29,7 @@ import { ProjectDetailSliderComponent } from './project-detail-slider/project-de
     HeaderComponent,
     FooterComponent,
     SkillsComponent,
-    ProjectDetailSliderComponent,
-    // EducationComponent,
-    // TimelineComponent
+    ProjectDetailSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +40,9 @@ import { ProjectDetailSliderComponent } from './project-detail-slider/project-de
     BrowserAnimationsModule
   ],
   exports: [],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent],
   entryComponents: []
 

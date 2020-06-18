@@ -23,7 +23,7 @@ export class ProjectDetailSliderComponent implements OnInit {
   project$: Observable<Projects>;
 
   constructor(private projectService: ProjectService,  private route: ActivatedRoute) {
-    console.log(this.project);
+
    }
 
 
