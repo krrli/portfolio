@@ -1,8 +1,12 @@
 
 <div class=project *ngIf="project$ | async as project">
 
+
   <div class=text>
-    <a routerLink="../../projects"><fa-icon [icon]="['fas', 'chevron-left']"></fa-icon></a>
+    <div class=float>
+      <a class=back routerLink="../../projects"><fa-icon [icon]="['fas', 'chevron-left']"></fa-icon></a>
+    </div>
+    <br>
     <br>
     <h3>{{ project.title }}</h3>
     <br>

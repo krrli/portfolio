@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .project{
   padding-top: 50px;
   margin-top: 60px;
@@ -14,6 +16,18 @@
   border-left: 1px solid #e0e0e0;
 }
 
-.button{
-  background-color: yellow;
+.float{
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+
+  .back{
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    color: $primary-color-timeline ;
+  }
 }
+
