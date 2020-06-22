@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { SkillsService } from './../_services/skills.service';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -12,13 +13,18 @@ import { Skills } from '../_interfaces/skills';
 export class SkillsComponent implements OnInit {
 
   skills: Skills[];
+  frontendSkills: Skills[];
+  backendSkills: Skills[];
+  methodSkills: Skills[];
+  mobileSkills: Skills[];
 
   constructor(private skillsService: SkillsService) {
   }
 
   ngOnInit() {
 
-    this.skillsService.read_Skills().subscribe(data => {
+
+    this.skillsService.getSkillsOrderedByTitle().subscribe(data => {
 
       this.skills = data.map(e => {
         return {
@@ -28,10 +34,12 @@ export class SkillsComponent implements OnInit {
           percentage: e.payload.doc.data()['percentage'],
         };
       });
-      console.log(this.skills.sort);
 
+      this.frontendSkills = this.skills.filter(e => e.category === "Frontend");
+      this.backendSkills = this.skills.filter(e => e.category === "Backend");
+      this.methodSkills = this.skills.filter(e => e.category === "Methodiken");
+      this.mobileSkills = this.skills.filter(e => e.category === "Mobile");
     });
 
   }
-
 }

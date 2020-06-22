@@ -1,11 +1,42 @@
 <div class="row">
-  <div class="col-sm-6" *ngFor="let skill of skills">
-    <h3>{{skill.category}}</h3>
-    <p>
-      <ngb-progressbar  [value]=skill.percentage [max]="100" height="2.8rem">
-        <h5>{{skill.title}}</h5>
-      </ngb-progressbar>
-    </p>
+  <div class="col-sm-6">
+    <h3>Frontend</h3><br>
+    <div *ngFor="let skill of frontendSkills">
+      <p>
+        <ngb-progressbar  [value]=skill.percentage [max]="100" height="2.8rem">
+          <h5>{{skill.title}}</h5>
+        </ngb-progressbar>
+      </p>
+    </div>
   </div>
-</div>
+  <div class="col-sm-6">
+    <h3>Backend</h3><br>
+    <div *ngFor="let skill of backendSkills">
+      <p>
+        <ngb-progressbar  [value]=skill.percentage [max]="100" height="2.8rem">
+          <h5>{{skill.title}}</h5>
+        </ngb-progressbar>
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <h3>Mobile</h3><br>
+    <div *ngFor="let skill of mobileSkills">
+      <p>
+        <ngb-progressbar  [value]=skill.percentage [max]="100" height="2.8rem">
+          <h5>{{skill.title}}</h5>
+        </ngb-progressbar>
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <h3>Methodiken</h3><br>
+    <div *ngFor="let skill of methodSkills">
+      <p>
+        <ngb-progressbar  [value]=skill.percentage [max]="100" height="2.8rem">
+          <h5>{{skill.title}}</h5>
+        </ngb-progressbar>
+      </p>
+    </div>
+  </div>
 <div class="footerHack"></div>
