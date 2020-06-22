@@ -28,7 +28,7 @@ export class SkillsComponent implements OnInit {
           percentage: e.payload.doc.data()['percentage'],
         };
       });
-      console.log(this.skills);
+      console.log(this.skills.sort);
 
     });
 

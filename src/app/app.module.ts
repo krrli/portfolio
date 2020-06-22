@@ -20,6 +20,7 @@ import { faCoffee, faHeart, faCode, faChevronLeft} from '@fortawesome/free-solid
 import { SkillsComponent } from './skills/skills.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -43,7 +44,8 @@ import { ProjectDetailSliderComponent } from './project-detail-slider/project-de
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    NgbModule
   ],
   exports: [],
   providers: [

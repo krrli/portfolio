@@ -1,7 +1,11 @@
-<div *ngFor="let skill of skills">
-  <p>{{skill.title}} :: {{skill.category}} :: {{skill.percentage}}</p>
+<div class="row">
+  <div class="col-sm-6" *ngFor="let skill of skills">
+    <h3>{{skill.category}}</h3>
+    <p>
+      <ngb-progressbar  [value]=skill.percentage [max]="100" height="2.8rem">
+        <h5>{{skill.title}}</h5>
+      </ngb-progressbar>
+    </p>
+  </div>
 </div>
-
-
-
-
+<div class="footerHack"></div>
