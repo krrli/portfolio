@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
 
       // Twitter
       {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:url', content: 'https://metatags.io/'},
+      {name: 'twitter:url', content: 'https://carla.land/'},
       {name: 'twitter:title', content: 'Portfolio Carla Iten'},
       {name: 'twitter:description', content: 'Hallo! Ich bin Carla, eine Software Ingenieurin aus Luzern. Ich mag Code, ...'},
       {name: 'twitter:image', content: 'https://carla.land/assets/carla-bw.jpg'}
