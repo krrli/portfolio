@@ -29,9 +29,23 @@ export class AppComponent implements OnInit {
     this.titleService.setTitle(this.title);
     this.metaService.addTags([
       {name: 'keywords', content: 'Portfolio, Software Engineer'},
-      {name: 'description', content: 'Hallo! Ich bin Carla, eine Software Ingenieurin aus Luzern. Ich mag Code, ein tolles Team, glückliche User und Kund:innen, ...'},
+      {name: 'description', content: 'Hallo! Ich bin Carla, eine Software Ingenieurin aus Luzern. Ich mag Code, ...'},
       {name: 'robots', content: 'index, follow'},
-      {name: 'image', content: 'https://carla.land/assets/carla-bw.jpg'}
+      {name: 'image', content: 'https://carla.land/assets/carla-bw.jpg'},
+
+      // Open Graph / Facebook
+      {name: 'og:type', content: 'website'},
+      {name: 'og:url', content: 'https://carla.land/'},
+      {name: 'og:title', content: 'Portfolio Carla Iten'},
+      {name: 'og:description', content: 'Hallo! Ich bin Carla, eine Software Ingenieurin aus Luzern. Ich mag Code, ...'},
+      {name: 'og:image', content: 'https://carla.land/assets/carla-bw.jpg'},
+
+      // Twitter
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:url', content: 'https://metatags.io/'},
+      {name: 'twitter:title', content: 'Portfolio Carla Iten'},
+      {name: 'twitter:description', content: 'Hallo! Ich bin Carla, eine Software Ingenieurin aus Luzern. Ich mag Code, ...'},
+      {name: 'twitter:image', content: 'https://carla.land/assets/carla-bw.jpg'}
     ]);
   }
 
