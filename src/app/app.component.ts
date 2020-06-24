@@ -11,7 +11,7 @@ declare let gtag: Function;
 })
 
 export class AppComponent implements OnInit {
-  title = 'Portfolio Carla Iten';
+  title = 'it`s carla';
 
   constructor(public router: Router, private titleService: Title, private metaService: Meta) {
     this.router.events.subscribe(event => {
