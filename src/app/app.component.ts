@@ -38,7 +38,8 @@ export class AppComponent implements OnInit {
       {name: 'og:url', content: 'https://carla.land/'},
       {name: 'og:title', content: 'Portfolio Carla Iten'},
       {name: 'og:description', content: 'Hallo! Ich bin Carla, eine Software Ingenieurin aus Luzern. Ich mag Code, ...'},
-      {name: 'og:image', content: 'https://carla.land/assets/carla-bw.jpg'},
+      {name: 'og:image:secure_url', content: 'https://carla.land/assets/carla-bw.jpg'},
+
 
       // Twitter
       {name: 'twitter:card', content: 'summary_large_image'},
