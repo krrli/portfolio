@@ -1,5 +1,5 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire';
@@ -21,6 +21,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import '@angular/common/locales/global/de';
+
 
 
 
@@ -49,7 +51,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   exports: [],
   providers: [
-    Title
+    Title,
+    {provide: LOCALE_ID, useValue: 'de-CH'}
   ],
   bootstrap: [AppComponent],
   entryComponents: []

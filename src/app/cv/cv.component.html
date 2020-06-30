@@ -18,7 +18,7 @@ Architektur viel dazulernen.
           <h4>{{job.function}}</h4>
           <h5>{{job.companyName}}</h5>
           <h5 class="date" *ngIf="dateTo(job.dateTo); else elseBlock">{{job.dateFrom | date:'MMM yyyy'}} - {{job.dateTo | date:'MMM yyyy'}}</h5>
-          <ng-template #elseBlock><h5 class="date">{{job.dateFrom | date:'MMM yyyy'}} - heute</h5></ng-template>
+          <ng-template #elseBlock><h5 class="date">{{job.dateFrom | date:'MMM yyyy' }} - heute</h5></ng-template>
           <p class="description">{{job.description}}</p>
 
         </div>
