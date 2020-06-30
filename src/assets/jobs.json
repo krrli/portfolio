@@ -1,6 +1,6 @@
 [
   {
-    "dateFrom": "2020-03",
+    "dateFrom": "2020-05",
     "dateTo": "",
     "companyName": "carla.land",
     "function": "Stellensuche",
@@ -8,20 +8,20 @@
     "employmentRate": "80%"
   },
   {
-    "dateFrom": "2019-12",
-    "dateTo": "2020-01",
-    "companyName": "erlebe babette gmbh",
-    "function": "Informatikerin",
-    "description": "Excel, MSSQL, Agile Entwicklung",
-    "employmentRate": "20%"
-  },
-  {
     "dateFrom": "2019-08",
-    "dateTo": "2019-12",
+    "dateTo": "",
     "companyName": "carla.land",
     "function": "Head of Everything",
     "description": "Auszeit: Biken in Whistler, Surfen in Tofino, 2 Monate Lagerfeuer, im Dachzelt schlafen, Bären beobachten, Kafi aus dem Bialetti Channli, Roadtrip USA, Nationalparks erwandern, grosse Bäume bestaunen, kleine Bäume bestaunen, Rössli reiten, Surfen in Costa Rica, jeden Tag Tierli streicheln, Reis und Bohnen, Avocado allday everyday. Die Schweiz und Luzern sind aber auch toll: Rennveloausfahrten, Wandern, Splitboardtouren, Snowboarden, Skifahren, Barista werden, Fasnacht, Keller entrümpeln. Die Liste ist lang! Es war toll, jetzt ist aber wieder Zeit für den Ernst des Lebens. Oder halt ein bitzli ernster.",
     "employmentRate": "100%"
+  },
+  {
+    "dateFrom": "2019-12",
+    "dateTo": "2020-01",
+    "companyName": "erlebe babette gmbh",
+    "function": "Informatikerin",
+    "description": "Zwischenverdienst: Excel, MSSQL, Agile Entwicklung",
+    "employmentRate": "20%"
   },
   {
     "dateFrom": "2019-03",
