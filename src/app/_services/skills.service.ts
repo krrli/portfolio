@@ -1,7 +1,8 @@
-import { filter } from 'rxjs/operators';
 import { Skills } from './../_interfaces/skills';
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+//import { FirestoreModule, getFirestore } from '@angular/fire/firestore';
+
+ import { AngularFirestore } from "@angular/fire/compat/firestore";
 
 
 @Injectable({
@@ -13,6 +14,7 @@ export class SkillsService {
 
   read_Skills() {
     console.log('read skills');
+
     return this.firestore.collection('skills').snapshotChanges();
   }
 

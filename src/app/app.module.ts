@@ -2,10 +2,9 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
+import {AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FirestoreModule } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +21,7 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectDetailSliderComponent } from './project-detail-slider/project-detail-slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import '@angular/common/locales/global/de';
+import {AngularFireModule} from '@angular/fire/compat';
 
 
 
@@ -45,8 +45,7 @@ import '@angular/common/locales/global/de';
     NgbModalModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
-    AngularFireDatabaseModule,
+    FirestoreModule,
     NgbModule
   ],
   exports: [],
